@@ -8,10 +8,10 @@
 # folders to track
 !alacritty/**
 !hypr/**
+!nvim/**
 !river/**
 !swaylock/**
 !waybar/**
-!nvim/**
 
 # files to track
 !mocha.sh
