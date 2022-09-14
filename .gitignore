@@ -5,7 +5,7 @@
 # track this file
 !.gitignore
 
-# folders to track
+# actual folders to track
 !alacritty/**
 !hypr/**
 !mocha.sh
