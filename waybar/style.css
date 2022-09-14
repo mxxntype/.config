@@ -1,0 +1,122 @@
+/* COLORS */
+@define-color   bg-dim        #181825;
+@define-color   bg            #1e1e2e;
+@define-color   bg-bright     #313244;
+
+@define-color   fg            #cdd6f4;
+@define-color   fg-dim        #b4befe;
+
+@define-color   ws            #f5c2e7;
+
+@define-color   disk          #f9e2af;
+@define-color   network       @bg-bright;
+@define-color   network-good  #94e2d5;
+@define-color   network-bad   #f38ba8;
+@define-color   clock         #cba6f7;
+@define-color   tray          @bg-bright;
+
+@define-color   debug         #ff0000;
+
+
+
+
+/* STYLING: ELEMENTS */
+* {
+  border: none;
+  border-radius: 0;
+  font-family: JetBrains Mono Nerd Font;
+  font-weight: 500;
+  font-size: 14px;
+  min-height: 0;
+  padding: 0 0px;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+  margin: 4px 0;
+}
+
+window#waybar {
+  background: @bg-dim;
+  color: @fg;
+}
+
+#workspaces button {
+  margin: 0 2px;
+  border-radius: 8px;
+  padding: 0 3px;
+  color: @fg-dim;
+}
+
+#workspaces button.active {
+  background-color: @ws;
+  color: @bg-dim;
+}
+
+
+
+#hyprland-language {
+  color: @bg-bright;
+}
+#disk {
+  padding: 0 4px;
+  background-color: @disk;
+  color: @bg-dim;
+}
+
+#network {
+  padding: 0 12px;
+  background-color: @network;
+}
+#network.ethernet {
+  color: @network-good;
+}
+#network.disconnected {
+  color: @network-bad;
+}
+
+#clock {
+  padding: 0 4px;
+  background-color: @clock;
+  color: @bg-dim;
+}
+
+#tray {
+  padding: 0 4px;
+  background-color: @tray;
+}
+
+
+
+/* STYLING: SPACERS */
+#custom-right-start {
+  background-color: @bg-dim;
+  color: @bg-bright;
+}
+#custom-right-blank-0 {
+  background-color: @bg-bright;
+  color: @disk;
+}
+#custom-disk-network {
+  background-color: @disk;
+  color: @network;
+}
+#custom-network-clock {
+  background-color: @network;
+  color: @clock;
+}
+#custom-clock-tray {
+  background-color: @clock;
+  color: @tray
+}
+
+
+
+/* CRYPTIC SHIT */
+@keyframes blink {
+  to {
+    background-color: @fg;
+    color: @bg-dim;
+  }
+}

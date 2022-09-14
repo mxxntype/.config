@@ -1,0 +1,15 @@
+# ignore everything
+*
+!*/
+
+# track this file
+!.gitignore
+
+# folders to track
+!alacritty/**
+!hypr/**
+!mocha.sh
+!nvim/**
+!river/**
+!swaylock/**
+!waybar/**

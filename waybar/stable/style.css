@@ -1,0 +1,165 @@
+/*       __        __
+   _____/ /___  __/ /__   _______________
+  / ___/ __/ / / / / _ \ / ___/ ___/ ___/
+ (__  ) /_/ /_/ / /  __// /__(__  |__  )
+/____/\__/\__, /_/\___(_)___/____/____/
+         /____/                          */
+
+@define-color bg-dim		    #181825;
+@define-color bg			      #313244;
+@define-color text-dim		  #b4befe;
+@define-color text-normal	  #cdd6f4;
+
+@define-color tag     			#b4befe;
+@define-color tag-occupied  #94e2d5;
+@define-color tag-focused	  #f5c2e7;
+@define-color tag-urgent	  #f9e2af;
+
+@define-color disk    			#f5c2e7;
+@define-color bat     			#f5c2e7;
+@define-color network		    #94e2d5;
+@define-color clock			    #89b4fa;
+@define-color tray			    @bg;
+@define-color window		    #94e2d5;
+
+* {
+   	border: none;
+    border-radius: 0;
+    font-family: JetBrains Mono Nerd Font;
+    font-size: 14px;
+    font-weight: 500;
+    min-height: 0;
+}
+
+window#waybar {
+    background: @bg-dim;
+    color: @text-normal;
+}
+
+tooltip {
+  background: @bg-dim;
+  color: @text-normal;
+  border: 2px solid @bg;
+}
+tooltip label {
+  color: @text-normal;
+}
+
+#workspaces button,
+#tags button {
+    padding: 0 8px;
+    background: @bg-dim;
+    color: @tag;
+    border-bottom: 2px solid transparent;
+}
+#workspaces button.occupied,
+#tags button.occupied {
+    color: @tag-occupied;
+    border-bottom: 2px solid @tag-occupied;
+}
+#workspaces button.focused,
+#tags button.focused {
+    background: @tag-focused;
+    color: @bg-dim;
+    border-bottom: 2px solid @tag-focused;
+}
+#workspaces button.urgent,
+#tags button.urgent {
+    background: @tag-urgent;
+    color: @bg-dim;
+    border-bottom: 2px solid @tag-urgent;
+}
+
+#window {
+    padding: 0 16px;
+	background: @bg;
+    color: @window;
+}
+
+#disk {
+	padding: 0 4px;
+	background: @disk;
+	color: @bg-dim;
+}
+
+#battery {
+	padding: 0 4px;
+	background: @bat;
+	color: @bg-dim;
+}
+
+#network {
+    padding: 0 6px;
+    background: @network;
+    color: @bg-dim;
+}
+
+#clock {
+    padding: 0 6px;
+    background: @clock;
+    color: @bg-dim;
+}
+
+#tray {
+    padding: 0 8px;
+    background: @tray;
+}
+
+#custom-left-blank-0,
+#custom-left-tags-start,
+#custom-tags-window,
+#custom-left-end,
+#custom-right-end,
+#custom-right-blank-0,
+#custom-disk-network,
+#custom-network-clock,
+#custom-clock-tray {
+	padding: 0 3px;
+	font-size: 20px;
+}
+
+#custom-left-blank-0 {
+	background: @bg;
+	color: @window;
+}
+#custom-left-tags-start {
+  padding: 0 0;
+	background: @bg-dim;
+	color: @bg;
+}
+#custom-tags-window {
+	background: @bg-dim;
+	color: @bg;
+}
+#custom-left-end {
+	padding: 0 0;
+	background: transparent;
+	color: @bg;
+}
+#custom-right-end {
+	background: transparent;
+	color: @bg;
+}
+#custom-right-blank-0 {
+	background: @bg;
+	color: @disk;
+}
+#custom-disk-network {
+	background: @disk;
+	color: @network;
+}
+#custom-network-clock {
+	background: @network;
+	color: @clock;
+}
+#custom-clock-tray {
+	background: @clock;
+	color: @tray;
+}
+
+@keyframes blink {
+    to {
+        background-color: #cdd6f4;
+        color: black;
+    }
+}

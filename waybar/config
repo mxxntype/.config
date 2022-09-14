@@ -1,0 +1,83 @@
+{
+  "layer": "top",
+  "spacing": 0,
+
+  "modules-left": ["battery"],
+  "modules-center": ["wlr/workspaces"],
+  "modules-right": ["custom/right-start", "custom/right-blank-0", "disk", "custom/disk-network", "network", "custom/network-clock", "clock", "custom/clock-tray", "tray"],
+
+  "wlr/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "﫢",
+      "5": "",
+      "6": "ﴣ",
+      "7": "",
+      "8": "",
+      "9": "懶",
+      "10": "",
+      "default": "◇",
+    },
+    "active-only": false,
+    "all-outputs": true,
+  },
+
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+  },
+
+  "hyprland/language": {
+    "format": "{}",
+    "keyboard-name": "Cooler Master Technology Inc. Gaming MECH KB",
+  },
+
+  "disk": {
+    "format": " {used}",
+  },
+
+  "network": {
+    "format-ethernet": "",
+    "format-wifi": " {essid}",
+    "format-disconnected": "睊 ",
+    "tooltip-format-ethernet": " {bandwidthDownBits}    {bandwidthUpBits}\n {ifname} = {ipaddr}\nmsk: /{cidr} {gwaddr}",
+    "tooltip-format-wifi": " {signalStrength}   {bandwidthDownBits}   {bandwidthUpBits}\n {ifname} = {ipaddr}\nmask: /{cidr} {gwaddr}",
+    "interval": 15,
+  },
+
+  "clock": {
+    "interval": 1,
+    "format": " {:%H:%M:%S}",
+  },
+
+  "tray": {
+    "icon-size": 18,
+    "spacing": 4,
+  },
+
+
+
+  "custom/right-start": {
+    "format": "",
+    "tooltip": false,
+  },
+  "custom/right-blank-0": {
+    "format": "   ",
+    "tooltip": false,
+  },
+  "custom/disk-network": {
+    "format": "",
+    "tooltip": false,
+  },
+  "custom/network-clock": {
+    "format": "",
+    "tooltip": false,
+  },
+  "custom/clock-tray": {
+    "format": "",
+    "tooltip": false,
+  },
+}
