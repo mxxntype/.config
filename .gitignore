@@ -11,6 +11,7 @@
 !river/**
 !swaylock/**
 !waybar/**
+!nvim/**
 
 # files to track
 !mocha.sh
