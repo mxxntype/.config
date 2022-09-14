@@ -5,10 +5,13 @@
 # track this file
 !.gitignore
 
-# actual folders to track
+# folders to track
 !alacritty/**
 !hypr/**
-!mocha.sh
 !river/**
 !swaylock/**
 !waybar/**
+
+# files to track
+!mocha.sh
+!.zshrc
