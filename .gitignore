@@ -9,7 +9,6 @@
 !alacritty/**
 !hypr/**
 !mocha.sh
-!nvim/**
 !river/**
 !swaylock/**
 !waybar/**
