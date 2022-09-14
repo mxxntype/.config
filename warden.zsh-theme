@@ -1,0 +1,1 @@
+/home/astrumaureus/.oh-my-zsh/themes/warden.zsh-theme

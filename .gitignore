@@ -16,3 +16,4 @@
 # files to track
 !mocha.sh
 !.zshrc
+!warden.zsh-theme
