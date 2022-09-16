@@ -26,6 +26,7 @@ alias nv="nvim "
 alias duf="duf -theme ansi "
 alias sz="du -sh * "
 alias free="free -wh --si "
+alias tree="tree --gitignore"
 
 alias yay="yay --color always "
 alias yay-clean="yay -Rns $(yay -Qdtq); yay -Sc --noconfirm "
