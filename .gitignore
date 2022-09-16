@@ -2,6 +2,10 @@
 *
 !*/
 
+# for naughty bitch folders that don't
+# want to be ignored for some reason.
+nvim/
+
 # track this file
 !.gitignore
 
