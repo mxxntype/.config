@@ -8,7 +8,7 @@
 # folders to track
 !alacritty/**
 !hypr/**
-!nvim/custom/**
+!nvchad/**
 !river/**
 !swaylock/**
 !waybar/**
