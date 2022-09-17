@@ -2,9 +2,9 @@
   "layer": "top",
   "spacing": 0,
 
-  "modules-left": ["battery"],
+  "modules-left": ["memory", "custom/bat-cpu", "cpu", "custom/cpu-pulseaudio", "pulseaudio", "custom/pulseaudio-end"],
   "modules-center": ["wlr/workspaces"],
-  "modules-right": ["custom/right-start", "custom/right-blank-0", "disk", "custom/disk-network", "network", "custom/network-clock", "clock", "custom/clock-tray", "tray"],
+  "modules-right": ["custom/end-right-blank-0", "custom/right-blank-0", "disk", "custom/disk-network", "network", "custom/network-clock", "clock", "custom/clock-tray", "tray"],
 
   "wlr/workspaces": {
     "format": "{icon}",
@@ -25,14 +25,26 @@
     "all-outputs": true,
   },
 
+  "memory": {
+    "format": " {percentage}%",
+    "max-length": 6,
+    "interval": 3,
+  },
+
+  "cpu": {
+    "format": " {usage}%",
+    "interval": 3,
+  },
+
+  "pulseaudio": {
+    "format": " {volume}%",
+    "format-muted": " {volume}%",
+    "on-click": "alacritty -e alsamixer",
+  },
+
   "battery": {
     "format": "{icon} {capacity}%",
     "format-icons": ["", "", "", "", ""],
-  },
-
-  "hyprland/language": {
-    "format": "{}",
-    "keyboard-name": "Cooler Master Technology Inc. Gaming MECH KB",
   },
 
   "disk": {
@@ -59,8 +71,20 @@
   },
 
 
+  "custom/bat-cpu": {
+    "format": "",
+    "tooltip": false,
+  },
+  "custom/cpu-pulseaudio": {
+    "format": "",
+    "tooltip": false,
+  },
+  "custom/pulseaudio-end": {
+    "format": "",
+    "tooltip": false,
+  },
 
-  "custom/right-start": {
+  "custom/end-right-blank-0": {
     "format": "",
     "tooltip": false,
   },

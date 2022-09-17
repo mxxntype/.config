@@ -6,11 +6,15 @@
 @define-color   fg            #cdd6f4;
 @define-color   fg-dim        #b4befe;
 
-@define-color   ws            #f5c2e7;
+@define-color   mem           #f9e2af;
+@define-color   cpu           #f38ba8;
+@define-color   pulseaudio    #a6e3a1;
 
-@define-color   disk          #f9e2af;
+@define-color   ws            #a6e3a1;
+
+@define-color   disk          #89b4fa;
 @define-color   network       @bg-bright;
-@define-color   network-good  #94e2d5;
+@define-color   network-good  #b4befe;
 @define-color   network-bad   #f38ba8;
 @define-color   clock         #cba6f7;
 @define-color   tray          @bg-bright;
@@ -42,6 +46,31 @@ window#waybar {
   color: @fg;
 }
 
+
+
+#memory {
+  padding: 0 8px;
+  background-color: @mem;
+  color: @bg-dim;
+}
+
+#cpu {
+  padding: 0 8px;
+  background-color: @cpu;
+  color: @bg-dim;
+}
+
+#pulseaudio {
+  padding: 0 8px;
+  background-color: @bg-bright;
+  color: @pulseaudio;
+}
+#pulseaudio.muted {
+  color: @fg-dim;
+}
+
+
+
 #workspaces button {
   margin: 0 2px;
   border-radius: 8px;
@@ -50,17 +79,14 @@ window#waybar {
 }
 
 #workspaces button.active {
-  background-color: @ws;
-  color: @bg-dim;
+  background-color: @bg-bright;
+  color: @ws;
 }
 
 
 
-#hyprland-language {
-  color: @bg-bright;
-}
 #disk {
-  padding: 0 4px;
+  padding: 0 8px;
   background-color: @disk;
   color: @bg-dim;
 }
@@ -77,7 +103,7 @@ window#waybar {
 }
 
 #clock {
-  padding: 0 4px;
+  padding: 0 8px;
   background-color: @clock;
   color: @bg-dim;
 }
@@ -90,7 +116,20 @@ window#waybar {
 
 
 /* STYLING: SPACERS */
-#custom-right-start {
+#custom-bat-cpu {
+  background-color: @cpu;
+  color: @mem;
+}
+#custom-cpu-pulseaudio {
+  background-color: @bg-bright;
+  color: @cpu;
+}
+#custom-pulseaudio-end {
+  background-color: @bg-dim;
+  color: @bg-bright;
+}
+
+#custom-end-right-blank-0 {
   background-color: @bg-dim;
   color: @bg-bright;
 }
