@@ -330,7 +330,7 @@ color_schemes:
       green:   '#A6E3A1' # green
       yellow:  '#F9E2AF' # yellow
       blue:    '#89B4FA' # blue
-      magenta: '#F5C2E7' # pink
+      magenta: '#CBA6F7' # pink
       cyan:    '#94E2D5' # teal
       white:   '#CDD6F4' # subtext1
 
@@ -341,7 +341,7 @@ color_schemes:
       green:   '#A6E3A1' # green
       yellow:  '#F9E2AF' # yellow
       blue:    '#89B4FA' # blue
-      magenta: '#F5C2E7' # pink
+      magenta: '#CBA6F7' # pink
       cyan:    '#94E2D5' # teal
       white:   '#CDD6F4' # subtext0
 
@@ -352,7 +352,7 @@ color_schemes:
       green:   '#A6E3A1' # green
       yellow:  '#F9E2AF' # yellow
       blue:    '#89B4FA' # blue
-      magenta: '#F5C2E7' # pink
+      magenta: '#CBA6F7' # pink
       cyan:    '#94E2D5' # teal
       white:   '#CDD6F4' # subtext1
 
