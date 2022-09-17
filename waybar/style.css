@@ -6,15 +6,15 @@
 @define-color   fg            #cdd6f4;
 @define-color   fg-dim        #b4befe;
 
-@define-color   mem           #f9e2af;
-@define-color   cpu           #f38ba8;
+@define-color   mem           #cba6f7;
+@define-color   cpu           #89b4fa;
 @define-color   pulseaudio    #a6e3a1;
 
 @define-color   ws            #a6e3a1;
 
 @define-color   disk          #89b4fa;
 @define-color   network       @bg-bright;
-@define-color   network-good  #b4befe;
+@define-color   network-good  #a6e3a1;
 @define-color   network-bad   #f38ba8;
 @define-color   clock         #cba6f7;
 @define-color   tray          @bg-bright;
@@ -61,7 +61,7 @@ window#waybar {
 }
 
 #pulseaudio {
-  padding: 0 8px;
+  padding: 0 12px;
   background-color: @bg-bright;
   color: @pulseaudio;
 }
