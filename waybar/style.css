@@ -14,8 +14,9 @@
 
 @define-color   disk          #89b4fa;
 @define-color   network       @bg-bright;
-@define-color   network-good  #a6e3a1;
-@define-color   network-bad   #f38ba8;
+@define-color   good  #a6e3a1;
+@define-color   medium        #f9e2af;
+@define-color   bad   #f38ba8;
 @define-color   clock         #cba6f7;
 @define-color   tray          @bg-bright;
 
@@ -69,6 +70,20 @@ window#waybar {
   color: @fg-dim;
 }
 
+#battery {
+  padding: 0 4px;
+  background-color: @bg-bright;
+}
+#battery.discharging.low {
+  color: @medium;
+}
+#battery.discharging.critical {
+  color: @bad;
+}
+#battery.charging.critical {
+  color: @medium;
+}
+
 
 
 #workspaces button {
@@ -96,13 +111,13 @@ window#waybar {
   background-color: @network;
 }
 #network.ethernet {
-  color: @network-good;
+  color: @good;
 }
 #network.wifi {
-  color: @network-good;
+  color: @good;
 }
 #network.disconnected {
-  color: @network-bad;
+  color: @bad;
 }
 
 #clock {
@@ -119,7 +134,7 @@ window#waybar {
 
 
 /* STYLING: SPACERS */
-#custom-bat-cpu {
+#custom-mem-cpu {
   background-color: @cpu;
   color: @mem;
 }
@@ -129,6 +144,15 @@ window#waybar {
 }
 #custom-pulseaudio-end {
   background-color: @bg-dim;
+  color: @bg-bright;
+}
+
+#custom-bat-left {
+  margin-left: 16px;
+  background-color: @bg-dim;
+  color: @bg-bright;
+}
+#custom-bat-right {
   color: @bg-bright;
 }
 

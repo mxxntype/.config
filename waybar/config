@@ -2,7 +2,7 @@
   "layer": "top",
   "spacing": 0,
 
-  "modules-left": ["memory", "custom/bat-cpu", "cpu", "custom/cpu-pulseaudio", "pulseaudio", "custom/pulseaudio-end"],
+  "modules-left": ["memory", "custom/mem-cpu", "cpu", "custom/cpu-pulseaudio", "pulseaudio", "custom/pulseaudio-end", "custom/bat-left", "battery", "custom/bat-right"],
   "modules-center": ["wlr/workspaces"],
   "modules-right": ["custom/end-right-blank-0", "custom/right-blank-0", "disk", "custom/disk-network", "network", "custom/network-clock", "clock", "custom/clock-tray", "tray"],
 
@@ -45,6 +45,10 @@
   "battery": {
     "format": "{icon} {capacity}%",
     "format-icons": ["", "", "", "", ""],
+    "states": {
+      "low": 30,
+      "critical": 15,
+    },
   },
 
   "disk": {
@@ -71,7 +75,7 @@
   },
 
 
-  "custom/bat-cpu": {
+  "custom/mem-cpu": {
     "format": "",
     "tooltip": false,
   },
@@ -80,6 +84,15 @@
     "tooltip": false,
   },
   "custom/pulseaudio-end": {
+    "format": "",
+    "tooltip": false,
+  },
+
+  "custom/bat-left": {
+    "format": "",
+    "tooltip": false,
+  },
+  "custom/bat-right": {
     "format": "",
     "tooltip": false,
   },
