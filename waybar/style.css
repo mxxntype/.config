@@ -98,6 +98,9 @@ window#waybar {
 #network.ethernet {
   color: @network-good;
 }
+#network.wifi {
+  color: @network-good;
+}
 #network.disconnected {
   color: @network-bad;
 }
