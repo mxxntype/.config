@@ -14,14 +14,11 @@
 
 @define-color   disk          #89b4fa;
 @define-color   network       @bg-bright;
-@define-color   good  #a6e3a1;
+@define-color   good          #a6e3a1;
 @define-color   medium        #f9e2af;
-@define-color   bad   #f38ba8;
+@define-color   bad           #f38ba8;
 @define-color   clock         #cba6f7;
 @define-color   tray          @bg-bright;
-
-@define-color   debug         #ff0000;
-
 
 
 
@@ -73,6 +70,7 @@ window#waybar {
 #battery {
   padding: 0 4px;
   background-color: @bg-bright;
+  color: @fg-dim;
 }
 #battery.discharging.low {
   color: @medium;

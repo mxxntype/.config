@@ -57,7 +57,7 @@
 
   "network": {
     "format-ethernet": "",
-    "format-wifi": " {essid}",
+    "format-wifi": "  {essid}",
     "format-disconnected": "睊 ",
     "tooltip-format-ethernet": " {bandwidthDownBits}    {bandwidthUpBits}\n {ifname} = {ipaddr}\nmsk: /{cidr} {gwaddr}",
     "tooltip-format-wifi": " {signalStrength}   {bandwidthDownBits}   {bandwidthUpBits}\n {ifname} = {ipaddr}\nmask: /{cidr} {gwaddr}",
