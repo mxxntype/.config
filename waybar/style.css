@@ -68,7 +68,9 @@ window#waybar {
 }
 
 #battery {
-  padding: 0 4px;
+  margin-left: 12px;
+  padding: 0 12px;
+  border-radius: 12px;
   background-color: @bg-bright;
   color: @fg-dim;
 }
@@ -142,15 +144,6 @@ window#waybar {
 }
 #custom-pulseaudio-end {
   background-color: @bg-dim;
-  color: @bg-bright;
-}
-
-#custom-bat-left {
-  margin-left: 16px;
-  background-color: @bg-dim;
-  color: @bg-bright;
-}
-#custom-bat-right {
   color: @bg-bright;
 }
 
