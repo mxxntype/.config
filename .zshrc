@@ -40,8 +40,8 @@ alias hdd-open="sudo cryptsetup luksOpen /dev/disk/by-uuid/68ad716c-31f7-4d05-98
 alias hdd-close="sudo umount /dev/hdd/data-0; sudo vgchange -an hdd; sudo cryptsetup close /dev/mapper/crypthdd "
 
 alias sudo="sudo "
-alias shutdown="brillo -O && sudo shutdown -h now "
-alias reboot="brillo -O && sudo reboot "
+alias shutdown="brillo -O; sudo shutdown -h now "
+alias reboot="brillo -O; sudo reboot "
 
 # uncomment if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
