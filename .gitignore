@@ -4,7 +4,6 @@
 
 # for naughty bitch folders that don't
 # want to be ignored for some reason.
-nvim/
 
 # track this file
 !.gitignore
@@ -12,7 +11,7 @@ nvim/
 # folders to track
 !alacritty/**
 !hypr/**
-!nvchad/**
+!nvim/**
 !river/**
 !swaylock/**
 !waybar/**
