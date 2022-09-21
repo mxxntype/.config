@@ -85,7 +85,7 @@ local astro_plugins = {
   },
 
   -- Parenthesis highlighting
-  ["p00f/nvim-ts-rainbow"] = { after = "nvim-treesitter" },
+  -- ["p00f/nvim-ts-rainbow"] = { after = "nvim-treesitter" },
 
   -- Autoclose tags
   ["windwp/nvim-ts-autotag"] = { after = "nvim-treesitter" },
