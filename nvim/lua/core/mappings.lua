@@ -1,6 +1,6 @@
 local is_available = astronvim.is_available
 
-local maps = { n = {}, v = {}, t = {}, [""] = {} }
+local maps = { n = {}, v = {}, i = {}, t = {}, [""] = {} }
 
 maps[""]["<Space>"] = "<Nop>"
 
@@ -15,6 +15,12 @@ maps.n["gx"] = { function() astronvim.url_opener() end, desc = "Open the file un
 maps.n["<C-s>"] = { "<cmd>w!<cr>", desc = "Force write" }
 maps.n["<C-q>"] = { "<cmd>q!<cr>", desc = "Force quit" }
 maps.n["Q"] = "<Nop>"
+
+-- Navigate within Insert mode
+maps.i["<C-h>"] = { "<left>", desc = "move left in insert mode"}
+maps.i["<C-j>"] = { "<down>", desc = "move down in insert mode"}
+maps.i["<C-k>"] = { "<up>", desc = "move up in insert mode"}
+maps.i["<C-l>"] = { "<right>", desc = "move right in insert mode"}
 
 -- Packer
 maps.n["<leader>pc"] = { "<cmd>PackerCompile<cr>", desc = "Packer Compile" }

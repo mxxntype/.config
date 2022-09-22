@@ -6,7 +6,7 @@ toggleterm.setup(astronvim.user_plugin_opts("plugins.toggleterm", {
   shading_factor = 2,
   direction = "float",
   float_opts = {
-    border = "curved",
+    border = "double",
     highlights = {
       border = "Normal",
       background = "Normal",

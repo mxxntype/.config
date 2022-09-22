@@ -10,9 +10,9 @@ neotree.setup(astronvim.user_plugin_opts("plugins.neo-tree", {
       with_expanders = false,
     },
     icon = {
-      folder_closed = "",
-      folder_open = "",
-      folder_empty = "",
+      folder_closed = "",
+      folder_open = "",
+      folder_empty = "",
       default = "",
     },
     git_status = {
@@ -30,15 +30,16 @@ neotree.setup(astronvim.user_plugin_opts("plugins.neo-tree", {
     },
   },
   window = {
-    width = 25,
+    width = 32,
     mappings = {
+      ["l"] = "open",
       ["o"] = "open",
     },
   },
   filesystem = {
     filtered_items = {
       visible = false,
-      hide_dotfiles = true,
+      hide_dotfiles = false,
       hide_gitignored = false,
       hide_by_name = {
         ".DS_Store",
