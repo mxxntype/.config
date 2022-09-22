@@ -5,12 +5,14 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/android-sdk/platform-t
 
 # path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export NPM_CONFIG_PREFIX=~/.npm-global
 
 # plugins.
 plugins=(git adb catimg dotnet colored-man-pages)
 
 # theme.
 ZSH_THEME="warden"
+ZSH_DISABLE_COMPFIX="true"
 source $ZSH/oh-my-zsh.sh
 
 CASE_SENSITIVE="true"
@@ -34,7 +36,7 @@ alias zshconfig="mate ~/.zshrc "
 alias ohmyzsh="mate ~/.oh-my-zsh "
 
 alias river="XKB_DEFAULT_LAYOUT=us,ru XKB_DEFAULT_OPTIONS=grp:win_space_toggle GRIM_DEFAULT_DIR=~/media/images/grim-screenshots XDG_DESKTOP_DIR=~/desktop dbus-run-session river -c 'python3 ~/.config/river/init.py' "
-alias hyprland="dbus-run-session ~/.local/bin/hyprland "
+alias Hyprland="dbus-run-session ~/.local/bin/Hyprland "
 
 alias hdd-open="sudo cryptsetup luksOpen /dev/disk/by-uuid/68ad716c-31f7-4d05-98dc-3430dda7e7f0 crypthdd --key-file /boot/volume.key && sudo vgchange -ay hdd && sudo mount /dev/hdd/data-0 /mnt/data-0 "
 alias hdd-close="sudo umount /dev/hdd/data-0; sudo vgchange -an hdd; sudo cryptsetup close /dev/mapper/crypthdd "

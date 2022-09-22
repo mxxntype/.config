@@ -16,7 +16,7 @@ import time     # time: for time, that's what it is.
 
 def visual():
     # bg & borders
-    os.system(f'riverctl spawn "wbg ~/media/images/wallpapers/catppuccin/windows-error.jpg" ')
+    os.system(f'riverctl spawn "wbg ~/media/images/wallpapers/catppuccin/artix-black-4k.png"')
 
     os.system(f'riverctl background-color 0x{bgDimColor}')
     os.system(f'riverctl border-width {borderWidth}')
@@ -90,6 +90,11 @@ def idle():
 
 
 def autostart():
+    os.system('''gsettings set org.gnome.desktop.interface gtk-theme 'Catppuccin-Mocha-Pink' ''')
+    os.system('''gsettings set org.gnome.desktop.interface icon-theme 'ePapirus-Dark' ''')
+    os.system('''gsettings set org.gnome.desktop.interface cursor-theme '"Sunity Cursors"' ''')
+    os.system('''gsettings set org.gnome.desktop.interface font-name 'JetBrainsMono Nerd Font' ''')
+
     os.system('riverctl spawn "waybar"')        # spawn a bar
     os.system('riverctl spawn "wireplumber"')   # sound server
     os.system('riverctl spawn "pipewire"')
@@ -115,10 +120,10 @@ def apps():
     os.system('''riverctl map normal Control+Shift 2 spawn "riverctl set-focused-tags 2; gimp" ''')
     os.system('''riverctl map normal Control+Shift 3 spawn "riverctl set-focused-tags 4; librewolf" ''')
     os.system('''riverctl map normal Control+Shift 4 spawn "riverctl set-focused-tags 8; kotatogram-desktop" ''')
-    os.system('''riverctl map normal Control+Shift 5 spawn "riverctl set-focused-tags 16; GDK_BACKEND=x11 libreoffice" ''')
+    os.system('''riverctl map normal Control+Shift 5 spawn "riverctl set-focused-tags 16; libreoffice" ''')
     os.system('''riverctl map normal Control+Shift 8 spawn "riverctl set-focused-tags 128; keepassxc" ''')
     os.system('''riverctl map normal Control+Shift 9 spawn "riverctl set-focused-tags 256; freetube" ''')
-    os.system('''riverctl map normal Control+Shift O spawn "riverctl set-focused-tags 256; GDK_BACKEND=x11 virt-manager" ''')
+    os.system('''riverctl map normal Control+Shift O spawn "riverctl set-focused-tags 256; alacritty -e cmus" ''')
 
 
 
@@ -154,9 +159,9 @@ if __name__ == '__main__':
     # colors
     bgDimColor = '1e1e2e'
     bgColor = '313244'
-    borderWidth = 4
+    borderWidth = 6
     borderColorUnfocused = bgColor
-    borderColorFocused = 'f5c2e7'
+    borderColorFocused = 'cba6f7'
     borderColorUrgent = 'f9e2af'
     fgColor = 'cdd6f4'
     accentColor = borderColorUrgent
