@@ -3,7 +3,7 @@
   "spacing": 0,
 
   "modules-left": ["memory", "custom/mem-cpu", "cpu", "custom/cpu-pulseaudio", "pulseaudio", "custom/pulseaudio-end", "battery"],
-  "modules-center": ["wlr/workspaces"],
+  "modules-center": ["river/tags", "wlr/workspaces"],
   "modules-right": ["custom/end-right-blank-0", "custom/right-blank-0", "disk", "custom/disk-network", "network", "custom/network-clock", "clock", "custom/clock-tray", "tray"],
 
   "wlr/workspaces": {
@@ -23,6 +23,13 @@
     },
     "active-only": false,
     "all-outputs": true,
+  },
+
+  "river/tags": {
+    "format": "{icon}",
+    "tag-labels": ["", "", "", "﫢", "", "ﴣ", "", "", "懶"],
+    "num-tags": 9,
+    "disable-click": true,
   },
 
   "memory": {

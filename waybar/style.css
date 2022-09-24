@@ -86,18 +86,23 @@ window#waybar {
 
 
 
-#workspaces button {
+#workspaces button,
+#tags button {
   margin: 0 2px;
   border-radius: 8px;
   padding: 0 3px;
   color: @fg-dim;
 }
 
-#workspaces button.active {
+#tags button.occupied {
+  background-color: @bg-bright;
+}
+
+#workspaces button.active,
+#tags button.focused {
   background-color: @bg-bright;
   color: @ws;
 }
-
 
 
 #disk {
