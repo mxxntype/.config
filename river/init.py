@@ -90,6 +90,8 @@ def idle():
 
 
 def autostart():
+    os.system('''riverctl spawn "wlsunset -t 7000 -T 8000 -g 0.775"''')
+
     os.system('''gsettings set org.gnome.desktop.interface gtk-theme 'Catppuccin-Mocha-Pink' ''')
     os.system('''gsettings set org.gnome.desktop.interface icon-theme 'ePapirus-Dark' ''')
     os.system('''gsettings set org.gnome.desktop.interface cursor-theme '"Sunity Cursors"' ''')
