@@ -36,11 +36,13 @@
     "format": " {percentage}%",
     "max-length": 6,
     "interval": 3,
+    "on-click": "alacritty -e htop",
   },
 
   "cpu": {
     "format": " {usage}%",
     "interval": 3,
+    "on-click": "alacritty -e htop",
   },
 
   "pulseaudio": {
@@ -69,6 +71,7 @@
     "tooltip-format-ethernet": " {bandwidthDownBits}    {bandwidthUpBits}\n {ifname} = {ipaddr}\nmsk: /{cidr} {gwaddr}",
     "tooltip-format-wifi": " {signalStrength}   {bandwidthDownBits}   {bandwidthUpBits}\n {ifname} = {ipaddr}\nmask: /{cidr} {gwaddr}",
     "interval": 15,
+    "on-click": "alacritty -e iwctl"
   },
 
   "clock": {
