@@ -4,7 +4,7 @@
 
   "modules-left": ["memory", "custom/mem-cpu", "cpu", "custom/cpu-pulseaudio", "pulseaudio", "custom/pulseaudio-end", "battery"],
   "modules-center": ["river/tags", "wlr/workspaces"],
-  "modules-right": ["custom/end-right-blank-0", "custom/right-blank-0", "disk", "custom/disk-network", "network", "custom/network-clock", "clock", "custom/clock-tray", "tray"],
+  "modules-right": ["custom/rblank0-left", "custom/rblank0", "disk", "custom/disk-network", "network", "custom/network-right", "custom/clock-left", "clock", "custom/clock-right", "custom/tray-left", "tray"],
 
   "wlr/workspaces": {
     "format": "{icon}",
@@ -76,7 +76,7 @@
 
   "clock": {
     "interval": 1,
-    "format": " {:%H:%M:%S}",
+    "format": " {:%H:%M}",
   },
 
   "tray": {
@@ -98,11 +98,11 @@
     "tooltip": false,
   },
 
-  "custom/end-right-blank-0": {
+  "custom/rblank0-left": {
     "format": "",
     "tooltip": false,
   },
-  "custom/right-blank-0": {
+  "custom/rblank0": {
     "format": "   ",
     "tooltip": false,
   },
@@ -110,11 +110,21 @@
     "format": "",
     "tooltip": false,
   },
-  "custom/network-clock": {
+  "custom/network-right": {
+    "format": "",
+    "tooltip": false,
+  },
+
+  "custom/clock-left": {
     "format": "",
     "tooltip": false,
   },
-  "custom/clock-tray": {
+  "custom/clock-right": {
+    "format": "",
+    "tooltip": false,
+  },
+
+  "custom/tray-left": {
     "format": "",
     "tooltip": false,
   },

@@ -152,11 +152,11 @@ window#waybar {
   color: @bg-bright;
 }
 
-#custom-end-right-blank-0 {
+#custom-rblank0-left {
   background-color: @bg-dim;
   color: @bg-bright;
 }
-#custom-right-blank-0 {
+#custom-rblank0 {
   background-color: @bg-bright;
   color: @disk;
 }
@@ -164,12 +164,25 @@ window#waybar {
   background-color: @disk;
   color: @network;
 }
-#custom-network-clock {
-  background-color: @network;
+#custom-network-right {
+  background-color: @bg-dim;
+  color: @bg-bright;
+}
+
+#custom-clock-left,
+#custom-clock-right {
+  background-color: @bg-dim;
   color: @clock;
 }
-#custom-clock-tray {
-  background-color: @clock;
+#custom-clock-left {
+  margin-left: 8px;
+}
+#custom-clock-right {
+  margin-right: 8px;
+}
+
+#custom-tray-left {
+  background-color: @bg-dim;
   color: @tray
 }
 
