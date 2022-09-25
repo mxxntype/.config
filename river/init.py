@@ -130,7 +130,7 @@ def apps():
 def layout():
     layout = 'rivertile'
     os.system(f'riverctl default-layout {layout}')
-    os.system(f'exec {layout} -view-padding 8 -outer-padding 8 -main-ratio 0.55')
+    os.system(f'exec {layout} -view-padding 8 -outer-padding 8 -main-ratio 0.5')
 
 
 
@@ -162,7 +162,7 @@ if __name__ == '__main__':
     borderWidth = 6
     borderColorUnfocused = bgColor
     borderColorFocused = 'cba6f7'
-    borderColorUrgent = 'f9e2af'
+    borderColorUrgent = borderColorFocused
     fgColor = 'cdd6f4'
     accentColor = borderColorUrgent
 

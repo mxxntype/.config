@@ -8,13 +8,13 @@
 
 @define-color   mem           #cba6f7;
 @define-color   cpu           #89b4fa;
-@define-color   pulseaudio    #a6e3a1;
+@define-color   pulseaudio    #94e2d5;
 
-@define-color   ws            #a6e3a1;
+@define-color   ws            #cba6f7;
 
 @define-color   disk          #89b4fa;
 @define-color   network       @bg-bright;
-@define-color   good          #a6e3a1;
+@define-color   good          #94e2d5;
 @define-color   medium        #f9e2af;
 @define-color   bad           #f38ba8;
 @define-color   clock         #cba6f7;
@@ -100,8 +100,8 @@ window#waybar {
 
 #workspaces button.active,
 #tags button.focused {
-  background-color: @bg-bright;
-  color: @ws;
+  background-color: @ws;
+  color: @bg-dim;
 }
 
 

@@ -14,10 +14,10 @@ font=JetBrains Mono Nerd Font
 font-size=14
 
 
-key-hl-color=a6e3a1
-caps-lock-key-hl-color=a6e3a1
-bs-hl-color=cba6f7
-caps-lock-bs-hl-color=cba6f7
+key-hl-color=94e2d5
+caps-lock-key-hl-color=94e2d5
+bs-hl-color=84b4fa
+caps-lock-bs-hl-color=84b4fa
 
 inside-color=1e1e2e
 inside-clear-color=1e1e2e
@@ -32,21 +32,21 @@ layout-text-color=cdd6f4
 line-color=31324400
 line-clear-color=31324400
 line-caps-lock-color=31324400
-line-ver-color=a6e3a1
-line-wrong-color=cba6f7
+line-ver-color=94e2d5
+line-wrong-color=84b4fa
 
 ring-color=313244
 ring-clear-color=313244
 ring-caps-lock-color=313244
-ring-ver-color=a6e3a1
-ring-wrong-color=cba6f7
+ring-ver-color=94e2d5
+ring-wrong-color=84b4fa
 
 separator-color=00000000
 text-color=cdd6f4
 text-clear-color=cdd6f4
-text-caps-lock-color=f38ba8
-text-ver-color=a6e3a1
-text-wrong-color=cba6f7
+text-caps-lock-color=cba6f7
+text-ver-color=94e2d5
+text-wrong-color=84b4fa
 
 effect-blur=5x5
 
