@@ -18,6 +18,7 @@ nvim/
 !waybar/**
 
 # files to track
+!cmus/catppuccin.theme
 !mocha.sh
 !.zshrc
 !warden.zsh-theme
