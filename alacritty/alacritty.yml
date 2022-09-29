@@ -357,8 +357,8 @@ color_schemes:
       white:   '#CDD6F4' # subtext1
 
     indexed_colors:
-      - { index: 16, color: '#FAB387' }
-      - { index: 17, color: '#F5E0DC' }
+      - { index: 16, color: '#fab387' }
+      - { index: 17, color: '#f5e0dc' }
       - { index: 18, color: '#1e1e2e' }
       - { index: 19, color: '#181825' }
       - { index: 20, color: '#b4befe' }
