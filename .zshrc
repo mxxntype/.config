@@ -43,6 +43,7 @@ alias hdd-close="sudo umount /dev/hdd/data-0; sudo vgchange -an hdd; sudo crypts
 
 alias sudo="sudo "
 alias shutdown="brillo -O; sudo shutdown -h now "
+alias poweroff="sudo poweroff"
 alias reboot="brillo -O; sudo reboot "
 
 # uncomment if pasting URLs and other text is messed up.
