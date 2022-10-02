@@ -61,7 +61,7 @@
   },
 
   "disk": {
-    "format": " {used}",
+    "format": " 0.0{percentage_used}",
   },
 
   "network": {
