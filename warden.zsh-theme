@@ -1,5 +1,5 @@
 dir() {
-  echo "%F{cyan}  %3~%f"
+  echo "%F{red}  %3~%f"
 }
 
 
@@ -9,6 +9,6 @@ ZSH_THEME_GIT_PROMPT_DIRTY="%F{red} "
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 
-PROMPT='%F{magenta}%F%K{magenta}%F{black}ﴂ %F%f%K$(dir)%k%F '
+PROMPT='%F{yellow}%F%K{yellow}%F{black}ﴂ %F%f%K$(dir)%k%F '
 PROMPT+='$(git_prompt_info)'
-PROMPT+='%F{blue}%f%F{black}%K{blue}%k%F%k%F{blue}%f '
+PROMPT+='%F{magenta}%f%F{black}%K{magenta}%k%F%k%F{magenta}%f '
