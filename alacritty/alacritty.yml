@@ -326,7 +326,7 @@ color_schemes:
     normal:
 
       black:   '#313244' # surface1
-      red:     '#F38BA8' # red
+      red:     '#eba0ab' # red
       green:   '#A6E3A1' # green
       yellow:  '#F9E2AF' # yellow
       blue:    '#89B4FA' # blue
@@ -337,7 +337,7 @@ color_schemes:
     # Bright colors
     bright:
       black:   '#313244' # surface2
-      red:     '#F38BA8' # red
+      red:     '#eda0ab' # red
       green:   '#A6E3A1' # green
       yellow:  '#F9E2AF' # yellow
       blue:    '#89B4FA' # blue
@@ -348,7 +348,7 @@ color_schemes:
     # Dim colors
     dim:
       black:   '#313244' # surface1
-      red:     '#F38BA8' # red
+      red:     '#eda0ab' # red
       green:   '#A6E3A1' # green
       yellow:  '#F9E2AF' # yellow
       blue:    '#89B4FA' # blue
