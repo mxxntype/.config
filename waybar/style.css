@@ -7,17 +7,17 @@
 @define-color   fg-dim        #b4befe;
 
 @define-color   mem           #cba6f7;
-@define-color   cpu           #f38ba8;
-@define-color   pulseaudio    #f9e2af;
+@define-color   cpu           #eba0ac;
+@define-color   pulseaudio    #f2cdcd;
 
-@define-color   ws            #f38ba8;
+@define-color   ws            #f5c2e7;
 
-@define-color   disk          #f9e2af;
+@define-color   disk          #f2cdcd;
 @define-color   network       @bg-bright;
 @define-color   good          #cba6f7;
-@define-color   medium        #f9e2af;
-@define-color   bad           #f38ba8;
-@define-color   clock         #f38ba8;
+@define-color   medium        #f2cdcd;
+@define-color   bad           #eba0ac;
+@define-color   clock         #eba0ac;
 @define-color   tray          @bg-bright;
 
 

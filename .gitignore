@@ -16,6 +16,7 @@ nvim/
 !river/**
 !swaylock/**
 !waybar/**
+!wallpapers/**
 
 # files to track
 !cmus/catppuccin.theme

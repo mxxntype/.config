@@ -13,17 +13,15 @@ import os       # for executing shell commands;
 import time     # time: for time, that's what it is.
 
 
-
 def visual():
     # bg & borders
-    os.system(f'riverctl spawn "wbg ~/media/images/wallpapers/catppuccin/artix-black-4k.png"')
+    os.system(f'riverctl spawn "swaybg -i ~/.config/wallpapers/catppuccin/mauve.png"')
 
     os.system(f'riverctl background-color 0x{bgDimColor}')
     os.system(f'riverctl border-width {borderWidth}')
     os.system(f'riverctl border-color-unfocused 0x{borderColorUnfocused}')
     os.system(f'riverctl border-color-focused 0x{borderColorFocused}')
     os.system(f'riverctl border-color-urgent 0x{borderColorUrgent}')
-
 
 
 def deviceInput():
@@ -35,7 +33,6 @@ def deviceInput():
     # !!! export XKB_DEFAULT_LAYOUT=us,ru; export XKB_DEFAULT_OPTIONS=grp:win_space_toggle
 
 
-
 def keybinds():
     os.system('riverctl map normal Super+Shift E exit')                             # exit river
     os.system('riverctl map normal Super+Shift R spawn "killall waybar; waybar"')   # restart waybar
@@ -43,7 +40,8 @@ def keybinds():
 
     # initialize tags
     for i in range(9):
-        key = i + 1; tags = 2**i
+        key = i + 1
+        tags = 2**i
 
         os.system(f'riverctl map normal Super {key} set-focused-tags {tags}')       # focus a tag
         os.system(f'riverctl map normal Super+Shift {key} set-view-tags {tags}')    # tag focused view with <tag>
@@ -83,10 +81,8 @@ def keybinds():
     os.system('riverctl map normal Super Left  send-layout-cmd rivertile "main-location left"')
 
 
-
 def idle():
     os.system('riverctl spawn "swayidle -w timeout 600 swaylock"')
-
 
 
 def autostart():
@@ -108,7 +104,6 @@ def autostart():
     os.system('riverctl spawn "kotatogram-desktop"')
 
 
-
 def apps():
     os.system('riverctl map normal Super Return spawn "alacritty"')             # terminal
     os.system('riverctl map normal Super E spawn "GDK_BACKEND=x11 thunar"')     # file manager
@@ -128,12 +123,10 @@ def apps():
     os.system('''riverctl map normal Control+Shift O spawn "riverctl set-focused-tags 256; alacritty -e cmus" ''')
 
 
-
 def layout():
     layout = 'rivertile'
     os.system(f'riverctl default-layout {layout}')
-    os.system(f'exec {layout} -view-padding 8 -outer-padding 8 -main-ratio 0.5')
-
+    os.system(f'exec {layout} -view-padding 8 -outer-padding 48 -main-ratio 0.5')
 
 
 def main():
@@ -155,15 +148,14 @@ def main():
     layout()                    # anything after layout() won't be interpreted!
 
 
-
 # you know why
 if __name__ == '__main__':
     # colors
     bgDimColor = '1e1e2e'
     bgColor = '313244'
     borderWidth = 6
-    borderColorUnfocused = bgColor
-    borderColorFocused = 'cba6f7'
+    borderColorUnfocused = '313244'
+    borderColorFocused = 'f5c2e7'
     borderColorUrgent = borderColorFocused
     fgColor = 'cdd6f4'
     accentColor = borderColorUrgent
