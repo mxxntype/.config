@@ -158,6 +158,6 @@ if __name__ == '__main__':
     borderColorFocused = 'cba6f7'
     borderColorUrgent = borderColorFocused
     fgColor = 'b4befe'
-    accentColor = borderColorUrgent
+    accentColor = fgColor
 
     main()      # start the setup
