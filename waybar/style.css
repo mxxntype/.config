@@ -7,17 +7,19 @@
 @define-color   fg-dim        #b4befe;
 
 @define-color   mem           #cba6f7;
-@define-color   cpu           #eba0ac;
-@define-color   pulseaudio    #f2cdcd;
+@define-color   cpu           #b4befe;
+@define-color   pulseaudio    #f5c2e7;
 
-@define-color   ws            #f5c2e7;
+@define-color   ws            #b4befe;
 
-@define-color   disk          #f2cdcd;
+@define-color   disk          #cba6f7;
+
 @define-color   network       @bg-bright;
-@define-color   good          #cba6f7;
+@define-color   good          #b4befe;
 @define-color   medium        #f2cdcd;
 @define-color   bad           #eba0ac;
-@define-color   clock         #eba0ac;
+
+@define-color   clock         #b4befe;
 @define-color   tray          @bg-bright;
 
 
@@ -36,10 +38,12 @@
 .modules-left,
 .modules-center,
 .modules-right {
-  margin: 4px 0;
+  margin-top: 4px;
+  margin-bottom: 8px;
 }
 
 window#waybar {
+  border-bottom: 4px solid @bg;
   background: @bg-dim;
   color: @fg;
 }
@@ -91,11 +95,12 @@ window#waybar {
   margin: 0 2px;
   border-radius: 8px;
   padding: 0 3px;
-  color: @fg-dim;
+  color: @bg-bright;
 }
 
 #tags button.occupied {
-  background-color: @bg-bright;
+  background-color: @bg;
+  color: @ws;
 }
 
 #workspaces button.active,

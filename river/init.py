@@ -15,7 +15,7 @@ import time     # time: for time, that's what it is.
 
 def visual():
     # bg & borders
-    os.system(f'riverctl spawn "swaybg -i ~/.config/wallpapers/catppuccin/mauve.png"')
+    os.system('riverctl spawn "swaybg -i ~/.config/wallpapers/glass.png"')
 
     os.system(f'riverctl background-color 0x{bgDimColor}')
     os.system(f'riverctl border-width {borderWidth}')
@@ -126,7 +126,7 @@ def apps():
 def layout():
     layout = 'rivertile'
     os.system(f'riverctl default-layout {layout}')
-    os.system(f'exec {layout} -view-padding 8 -outer-padding 48 -main-ratio 0.5')
+    os.system(f'exec {layout} -view-padding 4 -outer-padding 48 -main-ratio 0.5')
 
 
 def main():
@@ -153,11 +153,11 @@ if __name__ == '__main__':
     # colors
     bgDimColor = '1e1e2e'
     bgColor = '313244'
-    borderWidth = 6
+    borderWidth = 4
     borderColorUnfocused = '313244'
-    borderColorFocused = 'f5c2e7'
+    borderColorFocused = 'cba6f7'
     borderColorUrgent = borderColorFocused
-    fgColor = 'cdd6f4'
+    fgColor = 'b4befe'
     accentColor = borderColorUrgent
 
     main()      # start the setup

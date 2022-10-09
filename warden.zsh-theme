@@ -11,4 +11,4 @@ ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 PROMPT='%F{magenta}%F%K{magenta}%F{black}ﴂ %F%f%K$(dir)%k%F '
 PROMPT+='$(git_prompt_info)'
-PROMPT+='%F{magenta}%f%F{black}%K{magenta}%k%F%k%F{magenta}%f '
+PROMPT+='%F{white}%f%F{black}%K{white}%k%F%k%F{white}%f '
