@@ -283,10 +283,10 @@ color_schemes:
     # Default colors
     primary:
       background: '#1E1E2E' # base
-      foreground: '#CDD6F4' # text
+      foreground: '#b4befe' # text
       # Bright and dim foreground colors
-      dim_foreground: '#CDD6F4' # text
-      bright_foreground: '#CDD6F4' # text
+      dim_foreground: '#b4befe' # text
+      bright_foreground: '#b4befe' # text
 
     # Cursor colors
     cursor:
@@ -332,7 +332,7 @@ color_schemes:
       blue:    '#89B4FA' # blue
       magenta: '#CBA6F7' # pink
       cyan:    '#94E2D5' # teal
-      white:   '#CDD6F4' # subtext1
+      white:   '#b4befe' # subtext1
 
     # Bright colors
     bright:
@@ -343,7 +343,7 @@ color_schemes:
       blue:    '#89B4FA' # blue
       magenta: '#CBA6F7' # pink
       cyan:    '#94E2D5' # teal
-      white:   '#CDD6F4' # subtext0
+      white:   '#b4befe' # subtext0
 
     # Dim colors
     dim:
@@ -354,7 +354,7 @@ color_schemes:
       blue:    '#89B4FA' # blue
       magenta: '#CBA6F7' # pink
       cyan:    '#94E2D5' # teal
-      white:   '#CDD6F4' # subtext1
+      white:   '#b4befe' # subtext1
 
     indexed_colors:
       - { index: 16, color: '#fab387' }
