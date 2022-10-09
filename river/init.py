@@ -106,7 +106,7 @@ def autostart():
 
 def apps():
     os.system('riverctl map normal Super Return spawn "alacritty"')             # terminal
-    os.system('riverctl map normal Super E spawn "GDK_BACKEND=x11 thunar"')     # file manager
+    os.system('riverctl map normal Super E spawn "alacritty -e ranger"')     # file manager
     os.system(f'''riverctl map normal Super D spawn " bemenu-run -H 24 -B 2 --fn 'JetBrains Mono Nerd Font 10' --nb '#{bgDimColor}' --tb '#{bgDimColor}' --fb '#{accentColor}' --scb '#{bgDimColor}' --cb '#{bgDimColor}' --hb '#{accentColor}' --nf '#{fgColor}' --tf '#{fgColor}' --ff '#{bgDimColor}' --hf '#{bgDimColor}' --bdr '#{bgDimColor}' " ''')    # menu
     # yeah, time for a config file for the menu, this is bullshit...
 
