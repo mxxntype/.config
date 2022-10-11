@@ -13,7 +13,7 @@
       "2": "",
       "3": "",
       "4": "切",
-      "5": "",
+      "5": "",
       "6": "ﴣ",
       "7": "",
       "8": "",
@@ -61,7 +61,7 @@
   },
 
   "disk": {
-    "format": " 0.0{percentage_used}",
+    "format": " {percentage_used}%",
   },
 
   "network": {
@@ -103,7 +103,7 @@
     "tooltip": false,
   },
   "custom/rblank0": {
-    "format": "   ",
+    "format": "   ",
     "tooltip": false,
   },
   "custom/disk-network": {
