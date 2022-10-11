@@ -19,7 +19,7 @@ export XCURSOR_SIZE=24
 
 # bemenu config, cuz hyprland hates strings in its config
 BG_DIM='#181825'
-BG='#1e1e2e'
+BG='#181825'
 BG_BRIGHT='#313244'
 ACCENT='#cba6f7'
 FG='#b4befe'
