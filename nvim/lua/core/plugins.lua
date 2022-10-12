@@ -46,15 +46,17 @@ packer.init {
 -- plugins
 return packer.startup(function(use)
 
-  use 'wbthomason/packer.nvim'             -- the plugin manager itself
-  use 'nvim-treesitter/nvim-treesitter'    -- the based syntax highlighter
+  use {
+    'wbthomason/packer.nvim',             -- the plugin manager itself
+    'nvim-treesitter/nvim-treesitter',    -- the based syntax highlighter
+  }
 
-  use { "catppuccin/nvim",
-	  as = "catppuccin",
+  use { 'catppuccin/nvim',                -- the awesome colorscheme
+	  as = 'catppuccin',
 	  config = function()
-		  vim.g.catppuccin_flavour = "mocha"
-		  require("catppuccin").setup()
-		  vim.api.nvim_command "colorscheme catppuccin"
+		  vim.g.catppuccin_flavour = 'mocha'
+		  require('catppuccin').setup()
+		  vim.api.nvim_command 'colorscheme catppuccin'
 	  end
   }
 

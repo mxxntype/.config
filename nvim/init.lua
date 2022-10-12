@@ -4,11 +4,11 @@
 --[[---------------------------------------------]]--
 
 local core_modules = {
-  'core/plugins',           -- plugin manager
-  'core/mappings',          -- custom keymaps
-  'core/options',           -- general options
+  'lua/core/plugins',           -- plugin manager
+  'lua/core/mappings',          -- custom keymaps
+  'lua/core/options',           -- general options
 
-  'configs/tree-sitter',
+  'lua/configs/tree-sitter',
 }
 
 for _, module in ipairs(core_modules) do
