@@ -106,7 +106,7 @@ tooltip label {
   margin: 0 2px;
   border-radius: 8px;
   padding: 0 4px;
-  color: @bg-bright;
+  color: @fg-dim;
 }
 
 #tags button.occupied {
