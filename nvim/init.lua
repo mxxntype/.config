@@ -9,6 +9,7 @@ local core_modules = {
 
   'configs.tree-sitter',    -- syntax highlighter
   'configs.colorizer',
+  'configs.comment',
 }
 
 for _, module in ipairs(core_modules) do

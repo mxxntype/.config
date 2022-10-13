@@ -20,6 +20,10 @@ map('n', '<leader>w', ':w<cr>')
 -- sync plugins
 map('n', '<leader>u', ':PackerSync<cr>')
 
+-- comments
+map("n", "<leader>/", ":CommentToggle<cr>", {}) -- Comment One Line
+map("x", "<leader>/", ":'<,'>CommentToggle<cr>", {}) -- Comment Multiple Lines In Visual Mode
+
 
 
 --[[ INSERT MODE ]]--

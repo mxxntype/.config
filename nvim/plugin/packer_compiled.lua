@@ -85,6 +85,11 @@ _G.packer_plugins = {
     path = "/home/astrumaureus/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
+  ["nvim-comment"] = {
+    loaded = true,
+    path = "/home/astrumaureus/.local/share/nvim/site/pack/packer/start/nvim-comment",
+    url = "https://github.com/terrortylor/nvim-comment"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/astrumaureus/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
