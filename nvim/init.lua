@@ -8,6 +8,7 @@ local core_modules = {
   'core.options',           -- general options
 
   'configs.tree-sitter',    -- syntax highlighter
+  'configs.colorizer',
 }
 
 for _, module in ipairs(core_modules) do

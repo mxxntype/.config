@@ -48,6 +48,7 @@ return packer.startup(function(use)
   use {
     'wbthomason/packer.nvim',             -- the plugin manager itself
     'nvim-treesitter/nvim-treesitter',    -- the based syntax highlighter
+    'norcalli/nvim-colorizer.lua',
   }
 
   use { 'catppuccin/nvim',                -- the awesome colorscheme
