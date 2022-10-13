@@ -1,6 +1,5 @@
 --[[--------------------------------------]]--
 --     plugins + packer - configuration     --
---           author: astrumaureus           --
 --[[--------------------------------------]]--
 
 local fn = vim.fn

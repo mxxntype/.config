@@ -1,14 +1,13 @@
---[[---------------------------------------------]]--
---         init.lua - init file of neovim          --
---              author: astrumaureus               --
---[[---------------------------------------------]]--
+--[[-------------------------------------]]--
+--     init.lua - init file of neovim      --
+--[[-------------------------------------]]--
 
 local core_modules = {
   'core.plugins',           -- plugin manager
   'core.mappings',          -- custom keymaps
   'core.options',           -- general options
 
-  'configs.tree-sitter',
+  'configs.tree-sitter',    -- syntax highlighter
 }
 
 for _, module in ipairs(core_modules) do
