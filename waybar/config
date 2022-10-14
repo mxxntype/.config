@@ -14,20 +14,21 @@
       "3": "",
       "4": "切",
       "5": "",
-      "6": "ﴣ",
-      "7": "",
-      "8": "",
-      "9": "懶",
-      "10": "",
-      "default": "◇",
+      "6": "ﯟ",
+      "8": "ﴣ",
+      "9": "",
+      "10": "",
+      "default": "",
     },
+    /* "sort-by-name": false, */
+    /* "sort-by-coordinates": false, */
     "active-only": false,
     "all-outputs": true,
   },
 
   "river/tags": {
     "format": "{icon}",
-    "tag-labels": ["", "", "", "切", "", "ﴣ", "", "", "懶"],
+    "tag-labels": ["", "", "", "切", "", "ﯟ", "", "ﴣ", ""],
     "num-tags": 9,
     "disable-click": true,
   },
