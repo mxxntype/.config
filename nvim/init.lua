@@ -4,12 +4,14 @@
 
 local core_modules = {
   'core.plugins',           -- plugin manager
-  'core.mappings',          -- custom keymaps
   'core.options',           -- general options
+  'core.mappings',          -- custom keymaps
 
   'configs.tree-sitter',    -- syntax highlighter
-  'configs.colorizer',
-  'configs.comment',
+  'configs.coq',            -- based as FUCK autocomplete engine
+  'configs.lsp',            -- mason + lspconfig
+  'configs.colorizer',      -- colorizer lol
+  'configs.comment',        -- comment engine
 }
 
 for _, module in ipairs(core_modules) do

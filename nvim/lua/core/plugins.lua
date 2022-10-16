@@ -48,9 +48,21 @@ return packer.startup(function(use)
   use {
     'wbthomason/packer.nvim',             -- the plugin manager itself
     'nvim-treesitter/nvim-treesitter',    -- the based syntax highlighter
-    'norcalli/nvim-colorizer.lua',
-    'terrortylor/nvim-comment',
+    'neovim/nvim-lspconfig',              -- LSP
+    'williamboman/mason.nvim',            -- 
+    'williamboman/mason-lspconfig.nvim',  -- 
+    'L3MON4D3/LuaSnip' ,                  -- snippet engine
+    -- 'hrsh7th/nvim-cmp',                   -- completion plugin
+    -- 'saadparwaiz1/cmp_luasnip',           -- 
+    -- 'hrsh7th/cmp-buffer',                 -- nvim-cmp source for buffer words
+    -- 'hrsh7th/cmp-path',                   -- nvim-cmp source for path
+    'terrortylor/nvim-comment',           -- commenting engine
+    'norcalli/nvim-colorizer.lua',        -- ultrafast colorizer
   }
+
+  use { 'ms-jpq/coq_nvim', branch = 'coq' }
+  use { 'ms-jpq/coq.artifacts', branch = 'artifacts' }
+  use { 'ms-jpq/coq.thirdparty', branch = '3p' }
 
   use { 'catppuccin/nvim',                -- the awesome colorscheme
 	  as = 'catppuccin',

@@ -13,6 +13,9 @@ set.expandtab = true                          -- Converts tabs to spaces
 set.autoindent = true                         -- Good auto indent
 set.smartindent = false                       -- Makes indenting somewhat smarter?
 
+--[[ AUTOCOMPLETE ]]--
+set.completeopt = {'menu', 'menuone', 'noselect'}
+
 --[[ SEARCH & CASE ]]--
 set.incsearch = true                          -- Sets incremental search
 set.ignorecase = true                         -- Ignores case when searching
@@ -59,7 +62,6 @@ vim.cmd [[set nobackup]]                      -- Creates a backup file
 vim.cmd [[set nowritebackup]]                 -- Creates a backup file i guess
 vim.cmd [[set formatoptions-=cro]]            -- Stop newline continution of comments
 vim.cmd [[set complete+=kspell]]              -- Auto complete with spellcheck
-vim.cmd [[set completeopt=menuone,longest]]   -- Auto complete menu (It's pretty great)
 vim.cmd [[set nocompatible]]                  -- Disable compatibility to old-time vi
 vim.cmd [[setlocal conceallevel=2]]           -- Syntax conceal for markdown
 vim.cmd [[set noshowmode]]                    -- We don't need to see things like -- INSERT -- anymore
