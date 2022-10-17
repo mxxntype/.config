@@ -10,8 +10,9 @@ local core_modules = {
   'configs.tree-sitter',    -- syntax highlighter
   'configs.coq',            -- based as FUCK autocomplete engine
   'configs.lsp',            -- mason + lspconfig
-  'configs.colorizer',      -- colorizer lol
   'configs.comment',        -- comment engine
+  'configs.autopairs',      -- 
+  'configs.colorizer',      -- colorizer lol
 }
 
 for _, module in ipairs(core_modules) do

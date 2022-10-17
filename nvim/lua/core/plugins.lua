@@ -52,11 +52,8 @@ return packer.startup(function(use)
     'williamboman/mason.nvim',            -- 
     'williamboman/mason-lspconfig.nvim',  -- 
     'L3MON4D3/LuaSnip' ,                  -- snippet engine
-    -- 'hrsh7th/nvim-cmp',                   -- completion plugin
-    -- 'saadparwaiz1/cmp_luasnip',           -- 
-    -- 'hrsh7th/cmp-buffer',                 -- nvim-cmp source for buffer words
-    -- 'hrsh7th/cmp-path',                   -- nvim-cmp source for path
     'terrortylor/nvim-comment',           -- commenting engine
+    'windwp/nvim-autopairs',              -- 
     'norcalli/nvim-colorizer.lua',        -- ultrafast colorizer
   }
 
