@@ -49,9 +49,10 @@ return packer.startup(function(use)
     'wbthomason/packer.nvim',             -- the plugin manager itself
     'nvim-treesitter/nvim-treesitter',    -- the based syntax highlighter
     'neovim/nvim-lspconfig',              -- LSP
-    'williamboman/mason.nvim',            -- 
-    'williamboman/mason-lspconfig.nvim',  -- 
-    'L3MON4D3/LuaSnip' ,                  -- snippet engine
+    'williamboman/mason.nvim',            -- LSP package manager
+    'williamboman/mason-lspconfig.nvim',  -- LSP integration
+    'nvim-tree/nvim-tree.lua',            -- file explorer
+    'nvim-tree/nvim-web-devicons',        -- 
     'terrortylor/nvim-comment',           -- commenting engine
     'windwp/nvim-autopairs',              -- 
     'norcalli/nvim-colorizer.lua',        -- ultrafast colorizer

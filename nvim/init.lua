@@ -9,6 +9,7 @@ local core_modules = {
 
   'configs.tree-sitter',    -- syntax highlighter
   'configs.coq',            -- based as FUCK autocomplete engine
+  'configs.tree',
   'configs.lsp',            -- mason + lspconfig
   'configs.comment',        -- comment engine
   'configs.autopairs',      -- 
