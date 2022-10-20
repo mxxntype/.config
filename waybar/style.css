@@ -6,11 +6,11 @@
 @define-color   fg            #cdd6f4;
 @define-color   fg-dim        #b4befe;
 
-@define-color   mem           #cba6f7;
-@define-color   cpu           #b4befe;
-@define-color   pulseaudio    #f5c2e7;
+@define-color   mem           #f5c2e7;
+@define-color   cpu           #cba6f7;
+@define-color   pulseaudio    #b4befe;
 
-@define-color   ws            #b4befe;
+@define-color   ws            #cba6f7;
 
 @define-color   disk          #cba6f7;
 
@@ -19,7 +19,7 @@
 @define-color   medium        #f2cdcd;
 @define-color   bad           #eba0ac;
 
-@define-color   clock         #b4befe;
+@define-color   clock         #f5c2e7;
 @define-color   tray          @bg-bright;
 
 
@@ -43,8 +43,8 @@
 }
 
 window#waybar {
-  border-bottom: 4px solid @bg;
-  background: @bg-dim;
+  border-bottom: 4px solid @bg-bright;
+  background: @bg;
   color: @fg;
 }
 
@@ -79,7 +79,7 @@ tooltip label {
   color: @pulseaudio;
 }
 #pulseaudio.muted {
-  color: @fg-dim;
+  color: @bad;
 }
 
 #battery {
