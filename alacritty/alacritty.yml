@@ -10,43 +10,37 @@ font:
   normal:
     family: JetBrains Mono Nerd Font
     style: Medium
-
   bold:
     family: JetBrains Mono Nerd Font
     style: Extra Bold
-
   italic:
     family: JetBrains Mono Nerd Font
     style: Italic
-
   bold_italic:
     family: JetBrains Mono Nerd Font
     style: Extra Bold Italic
-
   size: 10
 
 
 
 color_schemes:
   mocha: &mocha
-
-    # Default colors
+    # default colors
     primary:
       background: '#1E1E2E' # base
       foreground: '#b4befe' # text
-      # Bright and dim foreground colors
-      dim_foreground: '#b4befe' # text
-      bright_foreground: '#b4befe' # text
+      dim_foreground:     '#b4befe' # text
+      bright_foreground:  '#b4befe' # text
 
-    # Cursor colors
+    # cursor colors
     cursor:
-      text: '#1E1E2E' # base
+      text:   '#1E1E2E' # base
       cursor: '#F5E0DC' # rosewater
     vi_mode_cursor:
-      text: '#1E1E2E' # base
+      text:   '#1E1E2E' # base
       cursor: '#B4BEFE' # lavender
 
-    # Search colors
+    # search colors
     search:
       matches:
         foreground: '#1E1E2E' # base
@@ -58,7 +52,7 @@ color_schemes:
         foreground: '#1E1E2E' # base
         background: '#A6ADC8' # subtext0
 
-    # Keyboard regex hints
+    # keyboard regex hints
     hints:
       start:
         foreground: '#1E1E2E' # base
@@ -67,12 +61,12 @@ color_schemes:
         foreground: '#1E1E2E' # base
         background: '#A6ADC8' # subtext0
 
-    # Selection colors
+    # selection colors
     selection:
-      text: '#1E1E2E' # base
+      text:       '#1E1E2E' # base
       background: '#F5E0DC' # rosewater
 
-    # Normal colors
+    # normal colors
     normal:
       black:   '#313244' # surface1
       red:     '#eba0ab' # red
@@ -83,7 +77,7 @@ color_schemes:
       cyan:    '#94E2D5' # teal
       white:   '#b4befe' # subtext1
 
-    # Bright colors
+    # bright colors
     bright:
       black:   '#313244' # surface2
       red:     '#eda0ab' # red
@@ -94,7 +88,7 @@ color_schemes:
       cyan:    '#94E2D5' # teal
       white:   '#b4befe' # subtext0
 
-    # Dim colors
+    # dim colors
     dim:
       black:   '#313244' # surface1
       red:     '#eda0ab' # red
