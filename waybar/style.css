@@ -104,8 +104,8 @@ tooltip label {
 #workspaces button,
 #tags button {
   margin: 0 2px;
-  border-radius: 8px;
-  padding: 0 4px;
+  border-radius: 12px;
+  padding: 0 10px;
   color: @fg-dim;
 }
 
