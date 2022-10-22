@@ -48,8 +48,7 @@ text-caps-lock-color=f5c2e7
 text-ver-color=f5c2e7
 text-wrong-color=eba0ac
 
-effect-blur=5x5
-
+effect-blur=30x3
 
 indicator-radius=72
 indicator-thickness=6
