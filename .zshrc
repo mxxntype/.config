@@ -1,4 +1,5 @@
 source ~/.config/mocha.sh
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 
 # $PATH.
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/android-sdk/platform-tools:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/astrumaureus/.local/bin"
