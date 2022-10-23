@@ -31,7 +31,7 @@ alias duf="duf -theme ansi "
 alias sz="du -sh * "
 alias free="free -wh --si "
 alias tree="tree --gitignore "
-alias mkdir="mkdir -p "
+alias cal="cal -my "
 
 alias yay="yay --color always "
 alias yay-clean="yay -Rns $(yay -Qdtq); yay -Sc --noconfirm "
