@@ -106,6 +106,7 @@
   "custom/rblank0": {
     "format": "   ",
     "tooltip": false,
+    "on-click": "alacritty -e sl -G -e"
   },
   "custom/disk-network": {
     "format": "",
