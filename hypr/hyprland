@@ -18,11 +18,11 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 export XCURSOR_SIZE=24
 
 # bemenu config, cuz hyprland hates strings in its config
-BG_DIM='#181825'
-BG='#181825'
-BG_BRIGHT='#313244'
+BG_DIM='#1e1e2e'
+BG='#1e1e2e'
+BG_BRIGHT='#1e1e2e'
 ACCENT='#cba6f7'
-FG='#b4befe'
+FG='#f5c2e7'
 
 export BEMENU_OPTS="-i -p '' --fn --scrollbar none -H 28 -W 0.5 --fn 'JetBrains Mono Nerd Font 12' --tb $BG_DIM --tf $ACCENT --fb $BG_DIM --ff $FG --nb $BG_DIM --nf $FG --hb $BG_DIM --hf $ACCENT --sb $BG_DIM --sf $ACCENT"
 
