@@ -131,13 +131,12 @@ tooltip label {
   padding: 0 12px;
   background-color: @network;
 }
-#network.ethernet {
-  color: @good;
-}
+#network.ethernet,
 #network.wifi {
   color: @good;
 }
-#network.disconnected {
+#network.disconnected,
+#network.disabled {
   color: @bad;
 }
 
