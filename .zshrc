@@ -10,7 +10,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export NPM_CONFIG_PREFIX=~/.npm-global
 
 # plugins.
-plugins=(git adb dotnet colored-man-pages)
+plugins=(aliases git adb dotnet colored-man-pages safe-paste)
 
 # theme.
 ZSH_THEME="warden"
