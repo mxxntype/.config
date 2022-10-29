@@ -21,3 +21,4 @@ require('mason-lspconfig').setup {
 lspconfig.sumneko_lua.setup{}
 lspconfig.omnisharp.setup{}
 lspconfig.pyright.setup{}
+lspconfig.bashls.setup{}
