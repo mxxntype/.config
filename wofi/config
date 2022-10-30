@@ -1,0 +1,14 @@
+mode = run
+
+prompt=...
+
+width = 480
+dynamic_lines = true
+
+x = 720
+y = 8
+
+hide_scroll = true
+insensitive = true
+
+gtk_dark = true
