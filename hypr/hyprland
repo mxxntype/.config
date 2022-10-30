@@ -27,7 +27,9 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 export XCURSOR_SIZE=24
 
 # other common envvars
-export GRIM_DEFAULT_DIR=~/media/images/grim-screenshots/
+export GRIM_DEFAULT_DIR=~/media/images/screenshots/
 export XDG_DESKTOP_DIR=~/desktop/
+export XDG_CONFIG_HOME=~/.config/
+export XDG_CACHE_HOME=~/.cache/
 
 exec Hyprland
