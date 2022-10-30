@@ -24,8 +24,9 @@ DISABLE_AUTO_TITLE="true"
 
 # aliases.
 alias ls="ls --color=auto "
-alias ll="ls -gAhF "
 alias l="ls -A"
+alias ll="ls -GgAhF "
+alias lll="ls -lAhF "
 alias nv="nvim "
 alias duf="duf -theme ansi "
 alias sz="du -sh * "
