@@ -7,6 +7,7 @@
 
 # folders to track
 !alacritty/**
+!kitty/**
 !hypr/**
 !nvim/**
 !river/**
