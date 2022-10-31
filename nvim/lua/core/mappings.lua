@@ -28,6 +28,10 @@ map("x", "<leader>/", ":'<,'>CommentToggle<cr>", {}) -- Comment Multiple Lines I
 map("n", "<leader>l", ":NvimTreeToggle<cr>", {})
 map("n", "<leader>e", ":NvimTreeFocus<cr>", {})
 
+-- terminal
+map("n", "<A-i>", "<cmd>ToggleTerm<cr>")
+map("t", "<A-i>", "<cmd>ToggleTerm<cr>")
+
 
 
 --[[ INSERT MODE ]]--
