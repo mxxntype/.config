@@ -10,15 +10,15 @@ font:
   normal:
     family: JetBrains Mono Nerd Font
     style: Medium
-  bold:
-    family: JetBrains Mono Nerd Font
-    style: Extra Bold
-  italic:
-    family: JetBrains Mono Nerd Font
-    style: Italic
-  bold_italic:
-    family: JetBrains Mono Nerd Font
-    style: Extra Bold Italic
+  # bold:
+  #   family: JetBrains Mono Nerd Font
+  #   style: Extra Bold
+  # italic:
+  #   family: JetBrains Mono Nerd Font
+  #   style: Italic
+  # bold_italic:
+  #   family: JetBrains Mono Nerd Font
+  #   style: Extra Bold Italic
   size: 10
 
 
