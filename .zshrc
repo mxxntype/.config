@@ -47,7 +47,7 @@ alias yay-clean="yay -Rns $(yay -Qdtq); yay -Sc --noconfirm"
 alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias river="XKB_DEFAULT_LAYOUT=us,ru XKB_DEFAULT_OPTIONS=grp:win_space_toggle GRIM_DEFAULT_DIR=~/media/images/grim-screenshots XDG_DESKTOP_DIR=~/desktop dbus-run-session river -c 'python3 ~/.config/river/init.py'"
+alias river="XKB_DEFAULT_LAYOUT=us,ru XKB_DEFAULT_OPTIONS=grp:win_space_toggle GRIM_DEFAULT_DIR=~/media/images/screenshots XDG_DESKTOP_DIR=~/desktop dbus-run-session river -c 'python3 ~/.config/river/init.py'"
 alias Hyprland="dbus-run-session Hyprland"
 
 alias hdd-open="sudo cryptsetup luksOpen /dev/disk/by-uuid/68ad716c-31f7-4d05-98dc-3430dda7e7f0 crypthdd --key-file /boot/volume.key && sudo vgchange -ay hdd && sudo mount /dev/hdd/data-0 /mnt/storage0"
