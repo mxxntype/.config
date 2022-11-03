@@ -12,14 +12,14 @@
 
 @define-color   ws            #cba6f7;
 
-@define-color   disk          #cba6f7;
+@define-color   disk          #f5c2e7;
 
 @define-color   network       @bg-bright;
 @define-color   good          #b4befe;
 @define-color   medium        #f2cdcd;
 @define-color   bad           #eba0ac;
 
-@define-color   clock         #f5c2e7;
+@define-color   clock         #cba6f7;
 @define-color   tray          @bg-bright;
 
 

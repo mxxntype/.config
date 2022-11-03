@@ -37,19 +37,19 @@
     "format": " {percentage}%",
     "max-length": 6,
     "interval": 3,
-    "on-click": "kitty htop",
+    "on-click": "alacritty -e htop",
   },
 
   "cpu": {
     "format": " {usage}%",
     "interval": 3,
-    "on-click": "kitty htop",
+    "on-click": "alacritty -e htop",
   },
 
   "pulseaudio": {
     "format": " {volume}%",
     "format-muted": " {volume}%",
-    "on-click": "kitty alsamixer",
+    "on-click": "alacritty -e alsamixer",
   },
 
   "battery": {
@@ -72,12 +72,13 @@
     "tooltip-format-ethernet": " {bandwidthDownBits}    {bandwidthUpBits}\n {ifname} = {ipaddr}\nmsk: /{cidr} {gwaddr}",
     "tooltip-format-wifi": " {signalStrength}   {bandwidthDownBits}   {bandwidthUpBits}\n {ifname} = {ipaddr}\nmask: /{cidr} {gwaddr}",
     "interval": 15,
-    "on-click": "kitty iwctl"
+    "on-click": "alacritty -e iwctl"
   },
 
   "clock": {
-    "interval": 5,
-    "format": " {:%H:%M}",
+    "interval": 15,
+    "format": " {:%d %b | %H:%M} ",
+    "tooltip-format": "{: %d.%m.%Y %n %A %n %Z %z}"
   },
 
   "tray": {
@@ -106,7 +107,7 @@
   "custom/rblank0": {
     "format": "   ",
     "tooltip": false,
-    "on-click": "kitty sl -G -e"
+    "on-click": "alacritty -e sl -G -e"
   },
   "custom/disk-network": {
     "format": "",
