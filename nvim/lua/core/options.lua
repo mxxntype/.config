@@ -29,6 +29,13 @@ set.undofile = true                           -- Persistent undo
 set.mouse = 'a'                               -- Enable mouse support
 set.clipboard = "unnamedplus"                 -- Copy paste between vim and everything else
 
+--[[ CURSOR ]]
+set.guicursor = "a:ver10-blinkon500-blinkoff500,n:block,v:block-blinkon0-blinkoff0,r-cr-o:hor10"
+vim.cmd [[
+  autocmd VimEnter,VimResume * set guicursor=a:ver10-blinkon500-blinkoff500,n:block,v:block-blinkon0-blinkoff0,r-cr-o:hor10
+  autocmd VimLeave,VimSuspend * set guicursor=a:hor10-blinkon500-blinkoff500
+]] -- reset cursor style when exiting neovim
+
 set.background = "dark"                       -- Tell vim what the background color looks like
 set.virtualedit = "onemore"                   -- With This option you can move the cursor one character over the end
 set.termguicolors = true                      -- Set term gui colors (not yet le)
@@ -62,6 +69,7 @@ vim.cmd [[set nobackup]]                      -- Creates a backup file
 vim.cmd [[set nowritebackup]]                 -- Creates a backup file i guess
 vim.cmd [[set formatoptions-=cro]]            -- Stop newline continution of comments
 vim.cmd [[set complete+=kspell]]              -- Auto complete with spellcheck
+vim.cmd [[set completeopt=menuone,longest]]   -- Auto complete menu (It's pretty great)
 vim.cmd [[set nocompatible]]                  -- Disable compatibility to old-time vi
 vim.cmd [[setlocal conceallevel=2]]           -- Syntax conceal for markdown
 vim.cmd [[set noshowmode]]                    -- We don't need to see things like -- INSERT -- anymore
