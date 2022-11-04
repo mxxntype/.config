@@ -41,14 +41,14 @@
   },
 
   "cpu": {
-    "format": " {usage}%",
+    "format": "龍 {usage}%",
     "interval": 3,
     "on-click": "alacritty -e htop",
   },
 
   "pulseaudio": {
     "format": " {volume}%",
-    "format-muted": " {volume}%",
+    "format-muted": "婢 {volume}%",
     "on-click": "alacritty -e alsamixer",
   },
 
