@@ -10,8 +10,6 @@ font:
     style: Medium
   size: 10
 
-
-
 color_schemes:
   mocha: &mocha
     primary:
