@@ -1,103 +1,84 @@
-#          __                _ __  __
-#   ____ _/ /___ ___________(_) /_/ /___  __
-#  / __ `/ / __ `/ ___/ ___/ / __/ __/ / / /
-# / /_/ / / /_/ / /__/ /  / / /_/ /_/ /_/ /
-# \__,_/_/\__,_/\___/_/  /_/\__/\__/\__, /
-#                                  /____/
-# alacritty.yml by: astrumaureus
+#  ▄▄▄· ▄▄▌   ▄▄▄·  ▄▄· ▄▄▄  ▪  ▄▄▄▄▄▄▄▄▄▄ ▄· ▄▌
+# ▐█ ▀█ ██•  ▐█ ▀█ ▐█ ▌▪▀▄ █·██ •██  •██  ▐█▪██▌
+# ▄█▀▀█ ██▪  ▄█▀▀█ ██ ▄▄▐▀▀▄ ▐█· ▐█.▪ ▐█.▪▐█▌▐█▪
+# ▐█ ▪▐▌▐█▌▐▌▐█ ▪▐▌▐███▌▐█•█▌▐█▌ ▐█▌· ▐█▌· ▐█▀·.
+#  ▀  ▀ .▀▀▀  ▀  ▀ ·▀▀▀ .▀  ▀▀▀▀ ▀▀▀  ▀▀▀   ▀ • 
 
 font:
   normal:
     family: JetBrains Mono Nerd Font
     style: Medium
-  # bold:
-  #   family: JetBrains Mono Nerd Font
-  #   style: Extra Bold
-  # italic:
-  #   family: JetBrains Mono Nerd Font
-  #   style: Italic
-  # bold_italic:
-  #   family: JetBrains Mono Nerd Font
-  #   style: Extra Bold Italic
   size: 10
 
 
 
 color_schemes:
   mocha: &mocha
-    # default colors
     primary:
-      background: '#1e1e2e' # base
-      foreground: '#b4befe' # text
-      dim_foreground:     '#b4befe' # text
-      bright_foreground:  '#b4befe' # text
+      background: '#1e1e2e'
+      foreground: '#b4befe'
+      dim_foreground:     '#b4befe'
+      bright_foreground:  '#b4befe'
 
-    # cursor colors
     cursor:
-      text:   '#1e1e2e' # base
-      cursor: '#cba6f7' # mauve
+      text:   '#1e1e2e'
+      cursor: '#cba6f7'
     vi_mode_cursor:
-      text:   '#1e1e2e' # base
-      cursor: '#b4befe' # lavender
+      text:   '#1e1e2e'
+      cursor: '#cba6f7'
 
-    # search colors
     search:
       matches:
-        foreground: '#1e1e2e' # base
-        background: '#a6adc8' # subtext0
+        foreground: '#1e1e2e'
+        background: '#a6adc8'
       focused_match:
-        foreground: '#1e1e2e' # base
-        background: '#a6e3a1' # green
+        foreground: '#1e1e2e'
+        background: '#a6e3a1'
       footer_bar:
-        foreground: '#1e1e2e' # base
-        background: '#a6adc8' # subtext0
+        foreground: '#1e1e2e'
+        background: '#a6adc8'
 
-    # keyboard regex hints
     hints:
       start:
-        foreground: '#1e1e2e' # base
-        background: '#f9e2af' # yellow
+        foreground: '#1e1e2e'
+        background: '#f9e2af'
       end:
-        foreground: '#1e1e2e' # base
-        background: '#a6adc8' # subtext0
+        foreground: '#1e1e2e'
+        background: '#a6adc8'
 
-    # selection colors
     selection:
-      text:       '#1e1e2e' # base
-      background: '#f5e0dc' # rosewater
+      text:       '#1e1e2e'
+      background: '#f5e0dc'
 
-    # normal colors
     normal:
-      black:   '#313244' # surface1
-      red:     '#eba0ab' # red
-      green:   '#a6e3a1' # green
-      yellow:  '#f9e2af' # yellow
-      blue:    '#89b4fa' # blue
-      magenta: '#cba6f7' # pink
-      cyan:    '#94e2d5' # teal
-      white:   '#b4befe' # subtext1
+      black:   '#313244'
+      red:     '#eba0ab'
+      green:   '#a6e3a1'
+      yellow:  '#f9e2af'
+      blue:    '#89b4fa'
+      magenta: '#cba6f7'
+      cyan:    '#94e2d5'
+      white:   '#b4befe'
 
-    # bright colors
     bright:
-      black:   '#313244' # surface2
-      red:     '#eda0ab' # red
-      green:   '#a6e3a1' # green
-      yellow:  '#f9e2af' # yellow
-      blue:    '#89b4fa' # blue
-      magenta: '#cba6f7' # pink
-      cyan:    '#94e2d5' # teal
-      white:   '#b4befe' # subtext0
+      black:   '#313244'
+      red:     '#eda0ab'
+      green:   '#a6e3a1'
+      yellow:  '#f9e2af'
+      blue:    '#89b4fa'
+      magenta: '#cba6f7'
+      cyan:    '#94e2d5'
+      white:   '#b4befe'
 
-    # dim colors
     dim:
-      black:   '#313244' # surface1
-      red:     '#eda0ab' # red
-      green:   '#a6e3a1' # green
-      yellow:  '#f9e2af' # yellow
-      blue:    '#89b4fa' # blue
-      magenta: '#cba6f7' # pink
-      cyan:    '#94e2d5' # teal
-      white:   '#b4befe' # subtext1
+      black:   '#313244'
+      red:     '#eda0ab'
+      green:   '#a6e3a1'
+      yellow:  '#f9e2af'
+      blue:    '#89b4fa'
+      magenta: '#cba6f7'
+      cyan:    '#94e2d5'
+      white:   '#b4befe'
 
     indexed_colors:
       - { index: 16, color: '#181825' }
@@ -117,6 +98,5 @@ window:
 
 cursor:
   style:
-    shape: Underline
-    thickness: 1.0
+    shape: Beam
     blinking: On
