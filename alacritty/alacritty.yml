@@ -7,7 +7,16 @@
 font:
   normal:
     family: JetBrains Mono Nerd Font
-    style: Medium
+    style: Semibold
+  bold:
+    family: JetBrains Mono Nerd Font
+    style: Extrabold
+  italic:
+    family: JetBrains Mono Nerd Font
+    style: Semibold Italic
+  bold italic:
+    family: JetBrains Mono Nerd Font
+    style: Extrabold Italic
   size: 10
 
 color_schemes:
