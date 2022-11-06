@@ -12,6 +12,7 @@ source ~/.config/mocha.sh
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/android-sdk/platform-tools:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/astrumaureus/.local/bin:/home/astrumaureus/.local/sh"
 export LS_COLORS="di=1;35:ln=32:so=36:pi=34:ex=1;31:bd=30;46:cd=30;44:su=30;41:sg=30;43:tw=30;42:ow=30;43"
+export EDITOR=nvim
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 export NPM_CONFIG_PREFIX=~/.npm-global
 
