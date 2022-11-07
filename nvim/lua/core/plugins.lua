@@ -47,7 +47,7 @@ return packer.startup(function(use)
 
   use {
     'wbthomason/packer.nvim',             -- the plugin manager itself
-    -- 'nvim-treesitter/nvim-treesitter',    -- the based syntax highlighter
+    'nvim-treesitter/nvim-treesitter',    -- the based syntax highlighter
     'neovim/nvim-lspconfig',              -- LSP
     'williamboman/mason.nvim',            -- LSP package manager
     'williamboman/mason-lspconfig.nvim',  -- LSP integration
