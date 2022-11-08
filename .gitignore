@@ -7,17 +7,18 @@
 
 # folders to track
 !alacritty/**
-!kitty/**
 !hypr/**
+!kitty/**
 !nvim/**
 !river/**
+!sway/**
 !swaylock/**
-!wofi/**
-!waybar/**
 !wallpapers/**
+!waybar/**
+!wofi/**
 
 # files to track
+!.zshrc
 !cmus/catppuccin.theme
 !mocha.sh
-!.zshrc
 !warden.zsh-theme
