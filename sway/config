@@ -1,3 +1,6 @@
+# autostart
+exec /usr/libexec/pipewire-launcher
+
 set $mod Mod4
 
 set $left h
@@ -81,6 +84,11 @@ input * repeat_rate 50
     bindsym $mod+Shift+9 move container to workspace number 9
     bindsym $mod+Shift+0 move container to workspace number 10
 
+assign [class="Alacritty"] workspace number 2
+bindsym $mod+e exec $term -e ranger
+bindsym $mod+p exec $term -e htop
+bindsym $mod+m exec $term -e alsamixer
+
 # Layout stuff:
     bindsym $mod+n splith
     bindsym $mod+v splitv
@@ -88,7 +96,7 @@ input * repeat_rate 50
     # Switch the current container between different layout styles
     bindsym $mod+s layout stacking
     bindsym $mod+w layout tabbed
-    bindsym $mod+e layout toggle split
+    # bindsym $mod+e layout toggle split
 
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
@@ -142,13 +150,13 @@ client.urgent #eda0ab #eda0ab #1e1e2e #1e1e2e
 # Read `man 5 sway-bar` for more information about this section.
 bar {
     position top
-    status_command while date +'%Y.%m.%d %I:%M '; do sleep 1; done
+    status_command while date +' %d %b | %H:%M  '; do sleep 10; done
 
     colors {
         statusline #b4befe
         background #181825
         focused_workspace #94e2d5ff #94e2d5ff #1e1e2e
-        inactive_workspace #1e1e2eff #1e1e2eff #b4befe
+        inactive_workspace #181825ff #181825ff #b4befe
     }
 }
 
