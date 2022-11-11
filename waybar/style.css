@@ -6,13 +6,13 @@
 @define-color   fg            #cdd6f4;
 @define-color   fg-dim        #b4befe;
 
-@define-color   mem           #a6e3a1;
+@define-color   mem           #89b4fa;
 @define-color   cpu           #cba6f7;
 @define-color   pulseaudio    #b4befe;
 
-@define-color   ws            #a6e3a1;
+@define-color   ws            #89b4fa;
 
-@define-color   disk          #a6e3a1;
+@define-color   disk          #89b4fa;
 
 @define-color   network       @bg-bright;
 @define-color   good          #b4befe;

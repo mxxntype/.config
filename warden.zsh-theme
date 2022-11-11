@@ -1,5 +1,5 @@
 dir() {
-  echo "%F{green}  %3~%f"
+  echo "%F{blue}  %3~%f"
 }
 
 
