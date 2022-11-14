@@ -5,35 +5,49 @@
 # ██╗███████╗███████║██║  ██║██║  ██║╚██████╗
 # ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝
 
-# TTY colorscheme
+# [ TTY ]
+# colorscheme
 source ~/.config/mocha.sh
 
-# envvars
-export ZSH="$HOME/.oh-my-zsh"
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/android-sdk/platform-tools:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/astrumaureus/.local/bin:/home/astrumaureus/.local/sh"
-export LS_COLORS="di=1;34:ln=35:so=36:pi=34:ex=1;31:bd=30;46:cd=30;44:su=30;41:sg=30;43:tw=30;43:ow=30;43"
+
+# [ ENVIRONMENTAL VARIABLES ] #
+# common
+export PATH="$PATH:/home/astrumaureus/.local/bin:/home/astrumaureus/.local/sh"
 export EDITOR=nvim
-export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
+
+# exa (supercharged ls with icons, trees, etc.)
+EXA_COLORS="ur=35;3;4:uw=35;3;4:ux=31;1;3;4:ue=35;1;3;4:gr=35:gw=35:gx=35;1:tr=35:tw=35:tx=35;1"
+EXA_COLORS="$(echo $EXA_COLORS):sn=34;1:sb=34;1:uu=97;1;3:gu=97;1;3:un=35;1;3:gn=35;1;3"
+EXA_COLORS="$(echo $EXA_COLORS):da=30;3:xx=97;1"
+export EXA_COLORS
+
+# npm
 export NPM_CONFIG_PREFIX=~/.npm-global
 
-# switches
+
+# [ ZSH ] #
+export ZSH="$HOME/.oh-my-zsh"
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 ZSH_DISABLE_COMPFIX="true"
 CASE_SENSITIVE="true"
 DISABLE_AUTO_TITLE="true"
 ZSH_THEME="warden"
 
-# plugins + vi mode
+# plugins
 plugins=(aliases git adb dotnet colored-man-pages safe-paste)
-bindkey -v
 
 # load omz
 source $ZSH/oh-my-zsh.sh
 
-# aliases
-alias ls="ls --color=auto"
-alias l="ls -A"
-alias ll="ls -GgAhF"
-alias lll="ls -lAhF"
+
+# [ ALIASES ] #
+# alias ls="ls --color=auto"
+# alias l="ls -A"
+# alias ll="ls -GgAhF"
+# alias lll="ls -lAhF"
+alias ls="exa --long --icons"
+alias l="exa --icons -a"
+alias ll="exa -a --long --icons"
 
 alias nv="nvim"
 alias duf="duf -theme ansi"
@@ -52,9 +66,6 @@ alias river="XKB_DEFAULT_LAYOUT=us,ru XKB_DEFAULT_OPTIONS=grp:win_space_toggle G
 alias Hyprland="dbus-run-session Hyprland"
 alias sway="dbus-run-session sway"
 
-alias hdd-open="sudo cryptsetup luksOpen /dev/disk/by-uuid/68ad716c-31f7-4d05-98dc-3430dda7e7f0 crypthdd --key-file /boot/volume.key && sudo vgchange -ay hdd && sudo mount /dev/hdd/data-0 /mnt/storage0"
-alias hdd-close="sudo umount /dev/hdd/data-0; sudo vgchange -an hdd; sudo cryptsetup close /dev/mapper/crypthdd"
-
 alias shutdown="brillo -O; sudo shutdown -h now"
 alias poweroff="sudo poweroff"
 alias reboot="brillo -O; sudo reboot"
@@ -64,7 +75,7 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets cursor)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
-
+# [ OTHER ]
 zstyle ":omz:update" mode reminder
 # zstyle ":omz:update" frequency 13
 
