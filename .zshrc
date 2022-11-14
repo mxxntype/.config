@@ -20,6 +20,7 @@ EXA_COLORS="ur=35;3;4:uw=35;3;4:ux=31;1;3;4:ue=35;1;3;4:gr=35:gw=35:gx=35;1:tr=3
 EXA_COLORS="$(echo $EXA_COLORS):sn=34;1:sb=34;1:uu=97;1;3:gu=97;1;3:un=35;1;3:gn=35;1;3"
 EXA_COLORS="$(echo $EXA_COLORS):da=30;3:xx=97;1"
 export EXA_COLORS
+export EXA_ICON_SPACING=2
 
 # npm
 export NPM_CONFIG_PREFIX=~/.npm-global
