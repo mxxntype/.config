@@ -3,5 +3,5 @@
 # change layouts back to english so i don't get locked out
 hyprctl keyword input:kb_layout us,ru
 
-# lock the screen
-exec swaylock
+# start the swaylock daemon
+exec swaylockd
