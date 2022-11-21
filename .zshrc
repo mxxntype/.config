@@ -12,7 +12,7 @@ source ~/.config/mocha.sh
 
 # [ ENVIRONMENTAL VARIABLES ] #
 # common
-export PATH="$PATH:/home/astrumaureus/.local/bin:/home/astrumaureus/.local/sh"
+export PATH="$PATH:/home/astrumaureus/.local/bin:/home/astrumaureus/.local/sh:/home/astrumaureus/go/bin"
 export EDITOR=nvim
 export LS_COLORS="$(echo $LS_COLORS)ex=01;31"
 
