@@ -25,8 +25,8 @@ if [ "$TERM" = "linux" ]; then
 	printf %b '\e]P5CBA6F7' # set magenta to
 	printf %b '\e]PDCBA6F7' # set bright magenta
 
-	printf %b '\e]P694E2D5' # set cyan
-	printf %b '\e]PE94E2D5' # set bright cyan
+	printf %b '\e]P689DCEB' # set cyan
+	printf %b '\e]PE89DCEB' # set bright cyan
 
 	clear
 fi
