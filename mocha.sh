@@ -2,10 +2,11 @@
 
 if [ "$TERM" = "linux" ]; then
 
-  clear
+  # clear
 
-	printf %b '\e]P01E1E2E' # set background
-	printf %b '\e]P8313244' # set bright black
+	# printf %b '\e]P01E1E2E' # set background
+	printf %b '\e]P0000000' # set background
+	# printf %b '\e]P8313244' # set bright black
 
 	printf %b '\e]P7B4BEFE' # set text color
 	printf %b '\e]PFB4BEFE' # set bright white
@@ -28,5 +29,5 @@ if [ "$TERM" = "linux" ]; then
 	printf %b '\e]P689DCEB' # set cyan
 	printf %b '\e]PE89DCEB' # set bright cyan
 
-	clear
+	# clear
 fi
