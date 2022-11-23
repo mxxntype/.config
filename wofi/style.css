@@ -14,11 +14,11 @@
 
 #input {
   background-color: #313244;
-  color: #f5c2e7;
+  color: #cba6f7;
 }
 
 #entry:selected {
-  color: #f5c2e7;
+  color: #cba6f7;
   background-color: transparent;
   border: none;
 }
