@@ -95,6 +95,11 @@ _G.packer_plugins = {
     path = "/home/astrumaureus/.local/share/nvim/site/pack/packer/start/coq_nvim",
     url = "https://github.com/ms-jpq/coq_nvim"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/astrumaureus/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/home/astrumaureus/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",

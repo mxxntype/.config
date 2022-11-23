@@ -15,6 +15,7 @@ local core_modules = {
   'configs.comment',        -- comment engine
   'configs.autopairs',      -- autopairs i guess
   'configs.colorizer',      -- colorizer lol
+  'configs.indent',
 }
 
 for _, module in ipairs(core_modules) do

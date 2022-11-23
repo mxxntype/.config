@@ -52,11 +52,12 @@ return packer.startup(function(use)
     'williamboman/mason.nvim',            -- LSP package manager
     'williamboman/mason-lspconfig.nvim',  -- LSP integration
     'nvim-tree/nvim-tree.lua',            -- file explorer
-    'nvim-tree/nvim-web-devicons',        -- 
-    'akinsho/toggleterm.nvim',
+    'nvim-tree/nvim-web-devicons',        -- dependency ^
+    'akinsho/toggleterm.nvim',            -- a terminal
     'terrortylor/nvim-comment',           -- commenting engine
     'windwp/nvim-autopairs',              -- 
     'norcalli/nvim-colorizer.lua',        -- ultrafast colorizer
+    'lukas-reineke/indent-blankline.nvim' -- indent lines
   }
 
   use { 'ms-jpq/coq_nvim', branch = 'coq' }
