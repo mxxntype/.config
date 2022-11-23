@@ -57,7 +57,8 @@ return packer.startup(function(use)
     'terrortylor/nvim-comment',           -- commenting engine
     'windwp/nvim-autopairs',              -- 
     'norcalli/nvim-colorizer.lua',        -- ultrafast colorizer
-    'lukas-reineke/indent-blankline.nvim' -- indent lines
+    'lukas-reineke/indent-blankline.nvim',-- indent lines
+    'folke/twilight.nvim',                -- 
   }
 
   use { 'ms-jpq/coq_nvim', branch = 'coq' }

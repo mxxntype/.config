@@ -154,6 +154,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/astrumaureus/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
+  },
+  ["twilight.nvim"] = {
+    loaded = true,
+    path = "/home/astrumaureus/.local/share/nvim/site/pack/packer/start/twilight.nvim",
+    url = "https://github.com/folke/twilight.nvim"
   }
 }
 

@@ -16,6 +16,7 @@ local core_modules = {
   'configs.autopairs',      -- autopairs i guess
   'configs.colorizer',      -- colorizer lol
   'configs.indent',
+  'configs.twilight',
 }
 
 for _, module in ipairs(core_modules) do
