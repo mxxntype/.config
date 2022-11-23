@@ -33,7 +33,7 @@ map("n", "<A-i>", "<cmd>ToggleTerm<cr>")
 map("t", "<A-i>", "<cmd>ToggleTerm<cr>")
 
 -- twilight mode
-map("n", "<leader>h", "<cmd>Twilight<cr>")
+map("n", "<leader>h", "<cmd>Twilight<cr><cmd>IndentBlanklineToggle<cr>")
 
 
 
