@@ -14,7 +14,7 @@ source ~/.config/mocha.sh
 # common
 export PATH="$PATH:/home/astrumaureus/.local/bin:/home/astrumaureus/.local/sh:/home/astrumaureus/go/bin"
 export EDITOR=nvim
-export LS_COLORS="$(echo $LS_COLORS)ex=01;31"
+export LS_COLORS="$(echo $LS_COLORS):ex=01;31"
 
 # exa (supercharged ls with icons, trees, etc.)
 # UI
