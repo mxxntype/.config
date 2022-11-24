@@ -62,7 +62,7 @@
   },
 
   "disk": {
-    "format": " {percentage_used}%",
+    "format": "神 {percentage_used}%",
   },
 
   "network": {
