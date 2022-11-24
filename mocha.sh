@@ -4,9 +4,8 @@ if [ "$TERM" = "linux" ]; then
 
   # clear
 
-	# printf %b '\e]P01E1E2E' # set background
 	printf %b '\e]P0000000' # set background
-	# printf %b '\e]P8313244' # set bright black
+	printf %b '\e]P8313244' # set bright black
 
 	printf %b '\e]P7B4BEFE' # set text color
 	printf %b '\e]PFB4BEFE' # set bright white
