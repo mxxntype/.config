@@ -15,7 +15,7 @@ require('mason').setup({
 })
 
 require('mason-lspconfig').setup {
-  -- ensure_installed = { "sumneko_lua", "omnisharp", "pyright" },
+  ensure_installed = { "sumneko_lua", "omnisharp", "pyright", "gopls", "bashls" },
 }
 
 lspconfig.sumneko_lua.setup{}
