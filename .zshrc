@@ -76,6 +76,8 @@ alias shutdown="brillo -O; sudo shutdown -h now"
 alias poweroff="sudo poweroff"
 alias reboot="brillo -O; sudo reboot"
 
+alias doas="sudo"
+
 # syntax highlighting
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets cursor)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
