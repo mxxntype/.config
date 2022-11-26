@@ -6,15 +6,15 @@
 @define-color   fg            #cdd6f4;
 @define-color   fg-dim        #b4befe;
 
-@define-color   mem           #89b4fa;
+@define-color   mem           #f2cdcd;
 @define-color   cpu           #cba6f7;
-@define-color   pulseaudio    #b4befe;
+@define-color   pulseaudio    @fg;
 
-@define-color   ws            #cba6f7;
+@define-color   ws            #f5c2e7;
 
-@define-color   disk          #89b4fa;
+@define-color   disk          #f2cdcd;
 
-@define-color   network       @bg-bright;
+@define-color   network       @fg;
 @define-color   good          #b4befe;
 @define-color   medium        #f2cdcd;
 @define-color   bad           #eba0ac;
@@ -87,7 +87,7 @@ tooltip label {
   padding: 0 12px;
   border-radius: 12px;
   background-color: @bg-bright;
-  color: @fg-dim;
+  color: @fg;
 }
 #battery.discharging.low {
   color: @medium;
@@ -129,7 +129,7 @@ tooltip label {
 
 #network {
   padding: 0 12px;
-  background-color: @network;
+  background-color: @bg-bright;
 }
 #network.ethernet,
 #network.wifi {
@@ -177,7 +177,7 @@ tooltip label {
 }
 #custom-disk-network {
   background-color: @disk;
-  color: @network;
+  color: @bg-bright;
 }
 #custom-network-right {
   background-color: @bg-dim;
