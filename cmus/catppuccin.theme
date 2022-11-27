@@ -1,12 +1,12 @@
 ### colors
 ### {{{
 set color_cmdline_bg=17
-set color_cmdline_fg=magenta
+set color_cmdline_fg=red
 set color_error=magenta
 set color_info=yellow
 set color_separator=black
 set color_statusline_bg=black
-set color_statusline_fg=cyan
+set color_statusline_fg=yellow
 set color_titleline_bg=17
 set color_titleline_fg=magenta
 set color_win_bg=17
