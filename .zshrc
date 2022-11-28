@@ -18,7 +18,7 @@ export LS_COLORS="$(echo $LS_COLORS):ex=01;31"
 
 # exa (supercharged ls with icons, trees, etc.)
 # UI
-EXA_COLORS="ur=35;3;4:uw=35;3;4:ux=31;1;3;4:ue=35;1;3;4:gr=35:gw=35:gx=35;1:tr=35:tw=35:tx=35;1"
+EXA_COLORS="ur=35;3:uw=35;3:ux=31;1;3:ue=35;1;3:gr=35:gw=35:gx=35;1:tr=35:tw=35:tx=35;1"
 EXA_COLORS="$(echo $EXA_COLORS):sn=34;1:sb=34;1:uu=97;1;3:gu=97;1;3:un=35;1;3:gn=35;1;3"
 EXA_COLORS="$(echo $EXA_COLORS):da=30;3:xx=97;1"
 # file colors
@@ -62,11 +62,10 @@ alias free="free -wh --si"
 alias tree="tree --gitignore"
 alias cal="cal -my"
 alias cat="bat"
+alias aft="android-file-transfer"
 
 alias yay="yay --color always"
 alias yay-clean="yay -Rns $(yay -Qdtq); yay -Sc --noconfirm"
-alias zshconfig="mate ~/.zshrc"
-alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias river="XKB_DEFAULT_LAYOUT=us,ru XKB_DEFAULT_OPTIONS=grp:win_space_toggle GRIM_DEFAULT_DIR=~/media/images/screenshots XDG_DESKTOP_DIR=~/desktop dbus-run-session river -c 'python3 ~/.config/river/init.py'"
 alias Hyprland="dbus-run-session Hyprland"
