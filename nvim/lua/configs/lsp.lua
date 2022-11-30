@@ -23,3 +23,4 @@ lspconfig.omnisharp.setup{}
 lspconfig.pyright.setup{}
 lspconfig.bashls.setup{}
 lspconfig.gopls.setup{}
+lspconfig.jsonls.setup{}
