@@ -53,6 +53,8 @@ require("catppuccin").setup({
         ["@method"] = { fg = colors.mauve },
 
         ["@variable"] = { fg = colors.lavender },
+        IndentBlanklineContextChar = { fg = colors.red },
+        IndentBlanklineContextStart = { fg = colors.red, style = { NONE } },
       }
     end,
     integrations = {

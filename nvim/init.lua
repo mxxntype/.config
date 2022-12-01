@@ -13,6 +13,7 @@ local core_modules = {
   'configs.tree',           -- file explorer
   'configs.term',
   'configs.lsp',            -- mason + lspconfig
+  'configs.gitsigns',       -- 
   'configs.comment',        -- comment engine
   'configs.autopairs',      -- autopairs i guess
   'configs.colorizer',      -- colorizer lol

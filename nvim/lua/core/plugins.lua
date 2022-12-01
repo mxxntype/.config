@@ -59,6 +59,7 @@ return packer.startup(function(use)
     'norcalli/nvim-colorizer.lua',        -- ultrafast colorizer
     'lukas-reineke/indent-blankline.nvim',-- indent lines
     'folke/twilight.nvim',                -- 
+    'lewis6991/gitsigns.nvim',            -- git integration for buffers
   }
 
   use { 'ms-jpq/coq_nvim', branch = 'coq' }
