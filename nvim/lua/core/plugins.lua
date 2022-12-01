@@ -69,7 +69,6 @@ return packer.startup(function(use)
 	  as = 'catppuccin',
 	  config = function()
 		  vim.g.catppuccin_flavour = 'mocha'
-		  require('catppuccin').setup()
 		  vim.api.nvim_command 'colorscheme catppuccin'
 	  end
   }

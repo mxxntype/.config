@@ -7,6 +7,7 @@ local core_modules = {
   'core.options',           -- general options
   'core.mappings',          -- custom keymaps
 
+  'configs.catppuccin',
   'configs.tree-sitter',    -- syntax highlighter
   'configs.coq',            -- based as FUCK autocomplete engine
   'configs.tree',           -- file explorer
