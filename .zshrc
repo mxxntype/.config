@@ -5,6 +5,7 @@
 # ██╗███████╗███████║██║  ██║██║  ██║╚██████╗
 # ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝
 
+
 # [ TTY ]
 # colorscheme
 source ~/.config/mocha.sh
@@ -39,21 +40,19 @@ CASE_SENSITIVE="true"
 DISABLE_AUTO_TITLE="true"
 ZSH_THEME="warden"
 
-# plugins
+# omz plugins & loading
 plugins=(aliases git adb dotnet golang colored-man-pages safe-paste)
-
-# load omz
 source $ZSH/oh-my-zsh.sh
 
 
 # [ ALIASES ] #
+alias ls="exa --long --icons"
+alias l="exa --icons -a"
+alias ll="exa -a --long --icons"
 # alias ls="ls --color=auto"
 # alias l="ls -A"
 # alias ll="ls -GgAhF"
 # alias lll="ls -lAhF"
-alias ls="exa --long --icons"
-alias l="exa --icons -a"
-alias ll="exa -a --long --icons"
 
 alias nv="nvim"
 alias duf="duf -theme ansi"
@@ -77,6 +76,8 @@ alias reboot="brillo -O; sudo reboot"
 
 alias doas="sudo"
 
+
+# [ 3P MODULES ] #
 # syntax highlighting
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets cursor)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -84,7 +85,3 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 # [ OTHER ]
 zstyle ":omz:update" mode reminder
-# zstyle ":omz:update" frequency 13
-
-# uncomment if pasting URLs and other text is messed up.
-# DISABLE_MAGIC_FUNCTIONS="true"
