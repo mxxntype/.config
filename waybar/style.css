@@ -1,7 +1,7 @@
 /* COLORS */
 @define-color   bg-dim        #181825;
-@define-color   bg            #1e1e2e;
-@define-color   bg-bright     #313244;
+@define-color   bg            @bg-dim;
+@define-color   bg-bright     #1e1e2e;
 
 @define-color   fg            #cdd6f4;
 @define-color   fg-dim        #b4befe;
