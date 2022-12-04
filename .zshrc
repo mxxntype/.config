@@ -1,3 +1,5 @@
+#!/bin/zsh
+#
 #    ███████╗███████╗██╗  ██╗██████╗  ██████╗
 #    ╚══███╔╝██╔════╝██║  ██║██╔══██╗██╔════╝
 #      ███╔╝ ███████╗███████║██████╔╝██║     
@@ -43,6 +45,7 @@ ZSH_THEME="warden"
 # omz plugins & loading
 plugins=(aliases git adb dotnet golang colored-man-pages safe-paste)
 source $ZSH/oh-my-zsh.sh
+zstyle ":omz:update" mode reminder
 
 
 # [ ALIASES ] #
@@ -82,6 +85,7 @@ alias doas="sudo"
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets cursor)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-
-# [ OTHER ]
-zstyle ":omz:update" mode reminder
+# opaque
+if [ -x "$(command -v opaque-probe)" ]; then
+  opaque-probe
+fi
