@@ -73,9 +73,8 @@ alias river="XKB_DEFAULT_LAYOUT=us,ru XKB_DEFAULT_OPTIONS=grp:win_space_toggle G
 alias Hyprland="dbus-run-session Hyprland"
 alias sway="dbus-run-session sway"
 
-alias shutdown="brillo -O; sudo shutdown -h now"
-alias poweroff="sudo poweroff"
-alias reboot="brillo -O; sudo reboot"
+alias shutdown="~/.local/sh/shutdown"
+alias reboot="~/.local/sh/reboot"
 
 alias doas="sudo"
 
