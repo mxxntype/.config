@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# switch to first workspace for a nicer view
+hyprctl dispatch workspace 1 && sleep 0.2
+
 # change layouts back to english so i don't get locked out
 hyprctl keyword input:kb_layout us,ru
 
