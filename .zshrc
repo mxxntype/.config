@@ -43,7 +43,17 @@ DISABLE_AUTO_TITLE="true"
 ZSH_THEME="warden"
 
 # omz plugins & loading
-plugins=(aliases git adb dotnet golang colored-man-pages safe-paste)
+plugins=(
+  adb
+  aliases
+  charm
+  colored-man-pages
+  docker
+  dotnet
+  git
+  golang
+  safe-paste
+)
 source $ZSH/oh-my-zsh.sh
 zstyle ":omz:update" mode reminder
 
