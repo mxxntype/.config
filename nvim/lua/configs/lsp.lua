@@ -24,3 +24,4 @@ lspconfig.pyright.setup{}
 lspconfig.bashls.setup{}
 lspconfig.gopls.setup{}
 lspconfig.jsonls.setup{}
+lspconfig.dockerls.setup{}
