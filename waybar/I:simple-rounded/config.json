@@ -1,0 +1,133 @@
+{
+  "layer": "top",
+  "spacing": 0,
+
+  "modules-left": ["memory", "custom/mem-cpu", "cpu", "custom/cpu-pulseaudio", "pulseaudio", "custom/pulseaudio-end", "battery"],
+  "modules-center": ["river/tags", "wlr/workspaces"],
+  "modules-right": ["custom/rblank0-left", "custom/rblank0", "disk", "custom/disk-network", "network", "custom/network-right", "custom/clock-left", "clock", "custom/clock-right", "custom/tray-left", "tray"],
+
+  "wlr/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "切",
+      "5": "",
+      "6": "ﯟ",
+      "8": "ﴣ",
+      "9": "",
+      "10": "",
+      "default": ""
+    },
+    "active-only": false,
+    "all-outputs": true
+  },
+
+  "river/tags": {
+    "format": "{icon}",
+    "tag-labels": ["", "", "", "切", "", "ﯟ", "", "ﴣ", ""],
+    "num-tags": 9,
+    "disable-click": true
+  },
+
+  "memory": {
+    "format": " {percentage}%",
+    "max-length": 6,
+    "interval": 3,
+    "on-click": "alacritty -e htop"
+  },
+
+  "cpu": {
+    "format": "龍 {usage}%",
+    "interval": 3,
+    "on-click": "alacritty -e htop"
+  },
+
+  "pulseaudio": {
+    "format": " {volume}%",
+    "format-muted": "婢 {volume}%",
+    "on-click": "alacritty -e alsamixer"
+  },
+
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "states": {
+      "low": 30,
+      "critical": 15
+    }
+  },
+
+  "disk": {
+    "format": "神 {percentage_used}%"
+  },
+
+  "network": {
+    "interface": "*0",
+    "format-ethernet": "",
+    "format-wifi": "  {essid}",
+    "format-disconnected": "睊 ",
+    "tooltip-format-ethernet": " {bandwidthDownBits}    {bandwidthUpBits}\n {ifname} = {ipaddr}\nmsk: /{cidr} {gwaddr}",
+    "tooltip-format-wifi": " {signalStrength}   {bandwidthDownBits}   {bandwidthUpBits}\n {ifname} = {ipaddr}\nmask: /{cidr} {gwaddr}",
+    "interval": 15,
+    "on-click": "alacritty -e iwctl"
+  },
+
+  "clock": {
+    "interval": 15,
+    "format": " {:%d %b | %H:%M} ",
+    "tooltip-format": "{: %d.%m.%Y %n %A %n %Z %z}"
+  },
+
+  "tray": {
+    "icon-size": 18,
+    "spacing": 4
+  },
+
+
+  "custom/mem-cpu": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/cpu-pulseaudio": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/pulseaudio-end": {
+    "format": "",
+    "tooltip": false
+  },
+
+  "custom/rblank0-left": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/rblank0": {
+    "format": "   ",
+    "tooltip": false,
+    "on-click": "alacritty -e sl -G -e"
+  },
+  "custom/disk-network": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/network-right": {
+    "format": "",
+    "tooltip": false
+  },
+
+  "custom/clock-left": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/clock-right": {
+    "format": "",
+    "tooltip": false
+  },
+
+  "custom/tray-left": {
+    "format": "",
+    "tooltip": false
+  }
+}
