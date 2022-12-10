@@ -24,6 +24,8 @@ export LS_COLORS="$(echo $LS_COLORS):ex=01;31"
 EXA_COLORS="ur=35;3:uw=35;3:ux=31;1;3:ue=35;1;3:gr=35:gw=35:gx=35;1:tr=35:tw=35:tx=35;1"
 EXA_COLORS="$(echo $EXA_COLORS):sn=34;1:sb=34;1:uu=97;1;3:gu=97;1;3:un=35;1;3:gn=35;1;3"
 EXA_COLORS="$(echo $EXA_COLORS):da=30;3:xx=97;1"
+# git
+EXA_COLORS="$(echo $EXA_COLORS):ga=32;1:gd=31;1:gm=31;1:gv:33;1"
 # file colors
 EXA_COLORS="$(echo $EXA_COLORS):*.go=34"
 
@@ -59,9 +61,9 @@ zstyle ":omz:update" mode reminder
 
 
 # [ ALIASES ] #
-alias ls="exa --long --icons"
-alias l="exa --icons -a"
-alias ll="exa -a --long --icons"
+alias l="exa --icons --git"
+alias ls="l --long"
+alias ll="l --long -a"
 # alias ls="ls --color=auto"
 # alias l="ls -A"
 # alias ll="ls -GgAhF"
