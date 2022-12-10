@@ -61,7 +61,7 @@ zstyle ":omz:update" mode reminder
 
 
 # [ ALIASES ] #
-alias l="exa --icons --git"
+alias l="exa --icons"
 alias ls="l --long"
 alias ll="l --long -a"
 # alias ls="ls --color=auto"
