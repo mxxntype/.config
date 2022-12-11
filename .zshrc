@@ -100,3 +100,8 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 if [ -x "$(command -v opaque-probe)" ]; then
   opaque-probe
 fi
+
+# orbit
+if [ -x "$(command -v orbit-probe)" ]; then
+  orbit-probe --mode show
+fi
