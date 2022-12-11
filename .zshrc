@@ -32,6 +32,12 @@ EXA_COLORS="$(echo $EXA_COLORS):*.go=34"
 export EXA_COLORS
 export EXA_ICON_SPACING=2
 
+# fzf
+export FZF_DEFAULT_OPTS=" \
+--color=bg+:#181825,bg:#181825,spinner:#f2cdcd,hl:#f5c2e7 \
+--color=fg:#45475a,header:#f5c2e7,info:#cba6f7,pointer:#f2cdcd \
+--color=marker:#f2cdcd,fg+:#45475a,prompt:#cba6f7,hl+:#f5c2e7"
+
 # npm
 export NPM_CONFIG_PREFIX=~/.npm-global
 
