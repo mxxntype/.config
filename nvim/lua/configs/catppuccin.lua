@@ -27,11 +27,11 @@ require("catppuccin").setup({
         types = { "bold" },
         operators = { "bold" },
     },
-    color_overrides = {
-      mocha = {
-        base = "#181825",
-      }
-    },
+    -- color_overrides = {
+    --   mocha = {
+    --     base = "#181825",
+    --   }
+    -- },
     custom_highlights = function(colors)
       return {
         String = { fg = colors.flamingo },
