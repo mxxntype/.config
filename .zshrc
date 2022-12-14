@@ -9,7 +9,7 @@
 
 
 # [ TTY ]
-# colorscheme
+# colorscheme (also affects syntax highlighting)
 source ~/.config/mocha.sh
 
 
@@ -99,7 +99,6 @@ alias doas="sudo"
 
 # [ 3P MODULES ] #
 # syntax highlighting
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets cursor)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # opaque
