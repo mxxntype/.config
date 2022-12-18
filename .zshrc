@@ -88,7 +88,7 @@ alias yay="yay --color always"
 alias yay-clean="yay -Rns $(yay -Qdtq); yay -Sc --noconfirm"
 
 alias river="XKB_DEFAULT_LAYOUT=us,ru XKB_DEFAULT_OPTIONS=grp:win_space_toggle GRIM_DEFAULT_DIR=~/media/images/screenshots XDG_DESKTOP_DIR=~/desktop dbus-run-session river -c 'python3 ~/.config/river/init.py'"
-alias Hyprland="dbus-run-session Hyprland"
+alias Hyprland="dbus-run-session ~/.local/sh/Hyprland"
 alias sway="dbus-run-session sway"
 
 alias shutdown="~/.local/sh/shutdown"
