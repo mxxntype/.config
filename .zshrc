@@ -43,58 +43,76 @@ export NPM_CONFIG_PREFIX=~/.npm-global
 
 
 # [ ZSH ] #
-export ZSH="$HOME/.oh-my-zsh"
-export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
-ZSH_DISABLE_COMPFIX="true"
-CASE_SENSITIVE="true"
-DISABLE_AUTO_TITLE="true"
-ZSH_THEME="warden"
+if [ -d $HOME/.oh-my-zsh ]; then
+  export ZSH="$HOME/.oh-my-zsh"
+  export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
+  ZSH_DISABLE_COMPFIX="true"
+  CASE_SENSITIVE="true"
+  DISABLE_AUTO_TITLE="true"
+  ZSH_THEME="warden"
 
-# omz plugins & loading
-plugins=(
-  adb
-  aliases
-  charm
-  colored-man-pages
-  docker
-  dotnet
-  git
-  golang
-  safe-paste
-)
-source $ZSH/oh-my-zsh.sh
-zstyle ":omz:update" mode reminder
+  # omz plugins & loading
+  plugins=(
+    adb
+    aliases
+    charm
+    colored-man-pages
+    docker
+    dotnet
+    git
+    golang
+    safe-paste
+  )
+
+  source $ZSH/oh-my-zsh.sh
+  zstyle ":omz:update" mode reminder
+fi
 
 
 # [ ALIASES ] #
-alias l="exa --icons"
-alias ls="l --long"
-alias ll="l --long -a"
-# alias ls="ls --color=auto"
-# alias l="ls -A"
-# alias ll="ls -GgAhF"
-# alias lll="ls -lAhF"
+if [ -x $( command -v doas ) ]; then
+  alias doas="sudo"
+fi
 
-alias nv="nvim"
-alias duf="duf -theme ansi"
-alias sz="du -sh *"
-alias free="free -wh --si"
-alias tree="tree --gitignore"
-alias cal="cal -my"
-alias cat="bat"
-alias aft="android-file-transfer"
+if [ -x $( command -v exa ) ]; then
+  alias l="exa --icons"
+  alias ls="l --long"
+  alias ll="l --long -a"
+  alias tree="ls --tree"
+else
+  alias ls="ls --color=auto"
+  alias l="ls -A"
+  alias ll="ls -GgAhF"
+  alias lll="ls -lAhF"
+fi
 
-alias yay="yay --color always"
-alias yay-clean="yay -Rns $(yay -Qdtq); yay -Sc --noconfirm"
+if [ -x $( command -v bat ) ]; then
+  alias cat="bat"
+fi
 
-alias river="XKB_DEFAULT_LAYOUT=us,ru XKB_DEFAULT_OPTIONS=grp:win_space_toggle GRIM_DEFAULT_DIR=~/media/images/screenshots XDG_DESKTOP_DIR=~/desktop dbus-run-session river -c 'python3 ~/.config/river/init.py'"
+if [ -x $( command -v rmt ) ]; then
+  alias rm="rmt"
+  alias rd="rm -d"
+fi
+
+if [ -x $( command -v yay ) ]; then
+  alias yay="yay --color always"
+  alias yay-clean="yay -Rns $(yay -Qdtq); yay -Sc --noconfirm"
+fi
+
+alias river="XKB_DEFAULT_LAYOUT=us,ru XKB_DEFAULT_OPTIONS=grp:win_space_toggle XDG_DESKTOP_DIR=~/desktop dbus-run-session river -c 'python3 ~/.config/river/init.py'"
 alias Hyprland="dbus-run-session ~/.local/sh/Hyprland"
 alias sway="dbus-run-session sway"
 
 alias shutdown="~/.local/sh/shutdown"
 alias reboot="~/.local/sh/reboot"
 
-alias doas="sudo"
+alias aft="android-file-transfer"
+alias cal="cal -my"
+alias duf="duf -theme ansi"
+alias free="free -wh --si"
+alias nv="nvim"
+alias sz="du -sh ./*"
 
 
 # [ 3P MODULES ] #
