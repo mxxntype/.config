@@ -9,6 +9,7 @@
 !alacritty/**
 !hypr/**
 !kitty/**
+!dunst/**
 !nvim/**
 !river/**
 !sway/**
