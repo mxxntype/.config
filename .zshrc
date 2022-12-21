@@ -15,7 +15,7 @@ source ~/.config/mocha.sh
 
 # [ ENVIRONMENTAL VARIABLES ] #
 # common
-export PATH="$PATH:/home/astrumaureus/.local/bin:/home/astrumaureus/.local/sh:/home/astrumaureus/go/bin"
+export PATH="$PATH:/home/astrumaureus/.local/bin:/home/astrumaureus/.local/shell:/home/astrumaureus/go/bin"
 export EDITOR=nvim
 export LS_COLORS="$(echo $LS_COLORS):ex=01;31"
 
@@ -43,7 +43,7 @@ export NPM_CONFIG_PREFIX=~/.npm-global
 
 
 # [ ZSH ] #
-if [ -d $HOME/.oh-my-zsh ]; then
+if [ -d "$HOME/.oh-my-zsh" ]; then
   export ZSH="$HOME/.oh-my-zsh"
   export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
   ZSH_DISABLE_COMPFIX="true"
@@ -70,11 +70,11 @@ fi
 
 
 # [ ALIASES ] #
-if [ -x $( command -v doas ) ]; then
+if [ -x "$( command -v doas )" ]; then
   alias doas="sudo"
 fi
 
-if [ -x $( command -v exa ) ]; then
+if [ -x "$( command -v exa )" ]; then
   alias l="exa --icons"
   alias ls="l --long"
   alias ll="l --long -a"
@@ -86,26 +86,26 @@ else
   alias lll="ls -lAhF"
 fi
 
-if [ -x $( command -v bat ) ]; then
+if [ -x "$( command -v bat )" ]; then
   alias cat="bat"
 fi
 
-if [ -x $( command -v rmt ) ]; then
+if [ -x "$( command -v rmt )" ]; then
   alias rm="rmt"
   alias rd="rm -d"
 fi
 
-if [ -x $( command -v yay ) ]; then
+if [ -x "$( command -v yay )" ]; then
   alias yay="yay --color always"
   alias yay-clean="yay -Rns $(yay -Qdtq); yay -Sc --noconfirm"
 fi
 
 alias river="XKB_DEFAULT_LAYOUT=us,ru XKB_DEFAULT_OPTIONS=grp:win_space_toggle XDG_DESKTOP_DIR=~/desktop dbus-run-session river -c 'python3 ~/.config/river/init.py'"
-alias Hyprland="dbus-run-session ~/.local/sh/Hyprland"
+alias Hyprland="dbus-run-session ~/.local/shell/Hyprland"
 alias sway="dbus-run-session sway"
 
-alias shutdown="~/.local/sh/shutdown"
-alias reboot="~/.local/sh/reboot"
+alias shutdown="~/.local/shell/shutdown"
+alias reboot="~/.local/shell/reboot"
 
 alias aft="android-file-transfer"
 alias cal="cal -my"
