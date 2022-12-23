@@ -2,7 +2,7 @@
   "layer": "top",
   "spacing": 0,
 
-  "modules-left": ["memory", "custom/mem-cpu", "cpu", "custom/cpu-pulseaudio", "pulseaudio", "custom/pulseaudio-end", "battery"],
+  "modules-left": ["memory", "custom/mem-cpu", "cpu", "custom/cpu-pulseaudio", "pulseaudio", "custom/pulseaudio-end", "battery", "hyprland/language"],
   "modules-center": ["river/tags", "wlr/workspaces"],
   "modules-right": ["custom/rblank0-left", "custom/rblank0", "disk", "custom/disk-network", "network", "custom/network-right", "custom/clock-left", "clock", "custom/clock-right", "custom/tray-left", "tray"],
 
@@ -57,6 +57,13 @@
       "low": 30,
       "critical": 15
     }
+  },
+
+  "hyprland/language": {
+    "format": "{}",
+    "format-en": " US",
+    "format-ru": " RU",
+    "keyboard-name": "cooler-master-technology-inc.-gaming-mech-kb"
   },
 
   "disk": {

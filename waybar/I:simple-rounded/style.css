@@ -2,6 +2,7 @@
 @define-color   bg-dim        #181825;
 @define-color   bg            #1e1e2e;
 @define-color   bg-bright     #313244;
+@define-color   bg-brightest  #45475a;
 
 @define-color   fg            #cdd6f4;
 @define-color   fg-dim        #b4befe;
@@ -97,6 +98,12 @@ tooltip label {
 }
 #battery.charging.critical {
   color: @medium;
+}
+
+#language {
+  color: @bg-brightest;
+  margin-left: 8px;
+  padding: 0 12px;
 }
 
 
