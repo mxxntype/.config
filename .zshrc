@@ -15,7 +15,7 @@ source ~/.config/mocha.sh
 
 # [ ENVIRONMENTAL VARIABLES ] #
 # common
-export PATH="$PATH:/home/astrumaureus/.local/bin:/home/astrumaureus/.local/shell:/home/astrumaureus/go/bin"
+export PATH="$PATH:/home/astrumaureus/.local/bin:/home/astrumaureus/shell:/home/astrumaureus/go/bin"
 export EDITOR=nvim
 export LS_COLORS="$(echo $LS_COLORS):ex=01;31"
 
@@ -101,11 +101,11 @@ if [ -x "$( command -v yay )" ]; then
 fi
 
 alias river="XKB_DEFAULT_LAYOUT=us,ru XKB_DEFAULT_OPTIONS=grp:win_space_toggle XDG_DESKTOP_DIR=~/desktop dbus-run-session river -c 'python3 ~/.config/river/init.py'"
-alias Hyprland="dbus-run-session ~/.local/shell/Hyprland"
+alias Hyprland="dbus-run-session ~/shell/Hyprland"
 alias sway="dbus-run-session sway"
 
-alias shutdown="~/.local/shell/shutdown"
-alias reboot="~/.local/shell/reboot"
+alias shutdown="~/shell/shutdown"
+alias reboot="~/shell/reboot"
 
 alias aft="android-file-transfer"
 alias cal="cal -my"
