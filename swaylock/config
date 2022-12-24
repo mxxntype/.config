@@ -41,8 +41,6 @@ text-caps-lock-color=eda0ab
 text-ver-color=cdd6f4
 text-wrong-color=eda0ab
 
-effect-blur=30x3
-fade-in=0.5
 
 indicator-radius=72
 indicator-thickness=6
