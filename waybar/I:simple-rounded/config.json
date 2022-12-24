@@ -68,8 +68,8 @@
 
   "custom/cmus": {
     "format": " {}",
-    "interval": 3,
-    "exec": "~/shell/cmus-get-name.sh",
+    "interval": 2,
+    "exec": "~/shell/waybar-cmus.sh",
     "exec-if": "pgrep cmus"
   },
 
