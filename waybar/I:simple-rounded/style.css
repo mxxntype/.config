@@ -10,6 +10,7 @@
 @define-color   mem           #f2cdcd;
 @define-color   cpu           #cba6f7;
 @define-color   pulseaudio    @fg;
+@define-color   cmus          #cba6f7;
 
 @define-color   ws            #f5c2e7;
 
@@ -102,6 +103,15 @@ tooltip label {
 
 #language {
   color: @bg-brightest;
+  margin-left: 8px;
+  padding: 0 12px;
+}
+
+#custom-cmus {
+  color: @cmus;
+  background-color: @bg-bright;
+  border-radius: 12px;
+
   margin-left: 8px;
   padding: 0 12px;
 }
