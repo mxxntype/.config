@@ -101,11 +101,11 @@ if [ -x "$( command -v yay )" ]; then
 fi
 
 alias river="XKB_DEFAULT_LAYOUT=us,ru XKB_DEFAULT_OPTIONS=grp:win_space_toggle XDG_DESKTOP_DIR=~/desktop dbus-run-session river -c 'python3 ~/.config/river/init.py'"
-alias Hyprland="dbus-run-session ~/shell/Hyprland"
+alias Hyprland="dbus-run-session ~/shell/Hyprland.sh"
 alias sway="dbus-run-session sway"
 
-alias shutdown="~/shell/shutdown"
-alias reboot="~/shell/reboot"
+alias shutdown="~/shell/shutdown.sh"
+alias reboot="~/shell/reboot.sh"
 
 alias aft="android-file-transfer"
 alias cal="cal -my"
@@ -120,11 +120,11 @@ alias sz="du -sh ./*"
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # opaque
-if [ -x "$(command -v opaque-probe)" ]; then
-  opaque-probe
+if [ -x "$(command -v opaque-probe.sh)" ]; then
+  opaque-probe.sh
 fi
 
 # orbit
-if [ -x "$(command -v orbit-probe)" ]; then
-  orbit-probe --mode show
+if [ -x "$(command -v orbit-probe.sh)" ]; then
+  orbit-probe.sh --mode show
 fi
