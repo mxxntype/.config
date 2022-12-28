@@ -180,12 +180,12 @@ tooltip label {
   color: @cpu;
 }
 #custom-pulseaudio-end {
-  background-color: @bg-dim;
+  background-color: @bg;
   color: @bg-bright;
 }
 
 #custom-rblank0-left {
-  background-color: @bg-dim;
+  background-color: @bg;
   color: @bg-bright;
 }
 #custom-rblank0 {
@@ -197,13 +197,13 @@ tooltip label {
   color: @bg-bright;
 }
 #custom-network-right {
-  background-color: @bg-dim;
+  background-color: @bg;
   color: @bg-bright;
 }
 
 #custom-clock-left,
 #custom-clock-right {
-  background-color: @bg-dim;
+  background-color: @bg;
   color: @clock;
 }
 #custom-clock-left {
@@ -214,7 +214,7 @@ tooltip label {
 }
 
 #custom-tray-left {
-  background-color: @bg-dim;
+  background-color: @bg;
   color: @tray
 }
 
