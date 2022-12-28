@@ -34,25 +34,28 @@ require("catppuccin").setup({
     -- },
     custom_highlights = function(colors)
       return {
-        String = { fg = colors.flamingo },
+        -- String = { fg = colors.flamingo },
 
-        Boolean = { fg = colors.maroon },
-        Number = { fg = colors.maroon },
-        Float = { fg = colors.maroon },
-        Constant = { fg = colors.maroon },
+        Boolean = { fg = colors.flamingo },
+        Number = { fg = colors.flaming },
+        Float = { fg = colors.flaming },
+        Constant = { fg = colors.flaming },
+        ["@constant"] = { fg = colors.text }, -- also *sh variables for some reason
+        -- ["@constant.builtin"] = { fg = colors.green },
 
-        Type = { fg = colors.green },
-        Structure = { fg = colors.green },
-        StorageClass = { fg = colors.green },
-        ["@type.builtin"] = { fg = colors.green },
+        -- Type = { fg = colors.green },
+        -- Structure = { fg = colors.green },
+        -- StorageClass = { fg = colors.green },
+        -- ["@type.builtin"] = { fg = colors.green },
 
-        Keyword = { fg = colors.red },
-        Include = { fg = colors.red },
+        -- Keyword = { fg = colors.red },
+        -- Include = { fg = colors.red },
 
-        Function = { fg = colors.mauve },
-        ["@method"] = { fg = colors.mauve },
+        -- ["@method"] = { fg = colors.mauve },
+        -- Function = { fg = colors.mauve },
+        ["@function.builtin"] = { fg = colors.pink },
 
-        ["@variable"] = { fg = colors.lavender },
+        -- ["@variable"] = { fg = colors.lavender },
         IndentBlanklineContextChar = { fg = colors.red },
         IndentBlanklineContextStart = { fg = colors.red, style = { NONE } },
       }
