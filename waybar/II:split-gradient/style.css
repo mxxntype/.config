@@ -1,0 +1,176 @@
+/* COLORS */
+@define-color   bg            transparent;
+
+/* catppuccin mocha */
+@define-color   red       #f38ba8;
+@define-color   maroon    #eda0ab;
+@define-color   peach     #fab387;
+@define-color   yellow    #f9e2af;
+@define-color   flamingo  #f2cdcd;
+@define-color   rosewater #f5e0dc;
+@define-color   green     #a6e3a1;
+@define-color   teal      #94e2d5;
+@define-color   sky       #89dceb;
+@define-color   sapphire  #74c7ec;
+@define-color   blue      #89b4fa;
+@define-color   mauve     #cba6f7;
+@define-color   pink      #f5c2e7;
+
+/* bg & fg */
+@define-color   base      #1e1e2e;
+@define-color   surface0  #313244;
+@define-color   surface1  #45475a;
+@define-color   text      #cdd6f4;
+@define-color   lavender  #b4befe;
+
+
+/* GENERAL BAR STYLING: */
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "JetBrains Mono Nerd Font", "monospace";
+  font-weight: 500;
+  font-size: 14px;
+  min-height: 0;
+  padding: 0 0px;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+  /* spacing  */
+  margin-top: 16px;
+}
+
+window#waybar {
+  background-color: @bg;
+}
+
+tooltip {
+}
+tooltip label {
+}
+
+
+/* GENERAL MODULE STYLING: */
+#memory,
+#cpu,
+#pulseaudio,
+#language,
+#custom-cmus,
+#disk,
+#network,
+#clock,
+#tray {
+  padding: 6 12;
+  border-radius: 128; /* extra big => always perfectly round */
+
+  background-color: @base;
+  color: @surface1;
+}
+
+/* INDIVIDUAL MODULE STYLING: */
+#memory {
+  background: linear-gradient(30deg, @maroon, @flamingo);
+  color: @base; 
+
+  margin-left: 16;
+}
+
+#cpu {
+  background: linear-gradient(30deg, @flamingo, @lavender);
+  color: @base; 
+}
+
+#pulseaudio {
+  background: linear-gradient(30deg, @green, @lavender);
+  color: @base; 
+}
+#pulseaudio.muted {
+  background: @base;
+  color: @maroon;
+}
+
+#battery {
+}
+#battery.discharging.low {
+}
+#battery.discharging.critical {
+}
+#battery.charging.critical {
+}
+
+#language {
+  color: @text;
+}
+
+#custom-cmus {
+  background: linear-gradient(30deg, @mauve, @blue);
+  color: @base; 
+}
+
+
+#workspaces,
+#tags {
+  padding: 6 0;
+  border-radius: 128; /* extra big => always perfectly round */
+  background-color: @base;
+}
+
+#workspaces button,
+#tags button {
+  background-color: @surface0;
+  color: @text;
+
+  padding: 0 8;
+  border-radius: 128; /* extra big => always perfectly round */
+  margin: 0 8;
+}
+
+#tags button.occupied {
+  /* needa figure out... */
+}
+
+#workspaces button.active,
+#tags button.focused {
+  background: linear-gradient(30deg, @mauve, @pink);
+  color: @base; 
+}
+
+
+#network {
+  background-color: @base;
+  padding: 0 16;
+}
+#network.ethernet,
+#network.wifi {
+  color: @green;
+}
+#network.disconnected,
+#network.disabled {
+  background: linear-gradient(30deg, @red, @peach);
+}
+
+#disk {
+  background: linear-gradient(30deg, @blue, @lavender);
+  color: @base; 
+}
+
+#clock {
+  background: linear-gradient(30deg, @pink, @mauve);
+  color: @base; 
+}
+
+#tray {
+  margin-right: 16;
+  /* background-color: @base; */
+}
+
+
+/* CRYPTIC SHIT */
+@keyframes blink {
+  to {
+    background-color: @fg;
+    color: @bg-dim;
+  }
+}
