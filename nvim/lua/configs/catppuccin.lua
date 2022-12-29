@@ -61,12 +61,13 @@ require("catppuccin").setup({
       }
     end,
     integrations = {
-        cmp = true,
+        cmp = false,
         gitsigns = true,
         nvimtree = true,
         telescope = true,
         notify = false,
         mini = false,
+        mason = true,
     },
 })
 
