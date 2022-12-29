@@ -70,7 +70,8 @@
     "format": " {}",
     "interval": 2,
     "exec": "~/shell/waybar-cmus.sh",
-    "exec-if": "pgrep cmus"
+    "exec-if": "pgrep cmus",
+    "tooltip": false
   },
 
   "disk": {
