@@ -47,8 +47,13 @@ window#waybar {
 }
 
 tooltip {
+  background-color: @bg;
 }
 tooltip label {
+  background: linear-gradient(30deg, @text, @lavender);
+  color: @base;
+  padding: 8 8;
+  border-radius: 8;
 }
 
 
