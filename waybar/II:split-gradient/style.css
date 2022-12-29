@@ -92,12 +92,18 @@ tooltip label {
 }
 
 #battery {
+  background-color: @base;
+  color: @text;
 }
 #battery.discharging.low {
+  color: @flamingo;
 }
 #battery.discharging.critical {
+  background: linear-gradient(30deg, @maroon, @red);
+  color: @base;
 }
 #battery.charging.critical {
+  color: @green;
 }
 
 #language {
